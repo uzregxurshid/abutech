@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abutech</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <!-- #region -->
+  <header class="header">
+    <!-- #region -->
+    <div class="container">
+      <div class="header__container">
+        <div class="header__logo">
+          <a class="header__home" href="./index.html">
+            <img class="header__img" width="126" height="28" src="./images/header/logo.svg" alt="header logo">
+          </a>
+        </div>
+        <div class="header__right">
+          <div class="header__actions">
+            <a class="header__tel" href="tel:+998901234567">
+              <span class="material-icons-outlined">
+                phone_in_talk
+              </span> <span class="header__tel--text"> +99 890 123 45 67</span>
+            </a>
+            <select class="header__selector" name="lng" id="lng">
+              <option value="ru" selected="selected">RU</option>
+              <option value="en">EN</option>
+              <option value="uz">UZ</option>
+            </select>
+            <a class="header__button" href="#">оставить заявку</a>
+          </div>
+          <div class="header__menu">
+            <button class="header__burger" id="toggle" type="button" aria-label="burger-button"><span
+                class="header__burger--text">МЕНЮ</span><span class="material-icons">
+                menu
+              </span></button>
+          </div>
+          <nav class="header__nav nav">
+            <div class="nav__top">
+              <button class="nav__close" id="toggler" type="button" aria-label="close button">
+                <span class="nav__close text" aria-hidden="true">ЗАКРЫТЬ <span class="material-icons-outlined">
+                    close
+                  </span></span>
+              </button>
+            </div>
+            <div class="nav__container">
+              <div class="nav__logo">
+                <a class="nav__home" href="./index.html">
+                  <img class="nav__img" width="126" height="28" src="./images/header/logo.svg" alt="header logo">
+                </a>
+              </div>
+              <ul class="nav__list">
+                <li class="nav__items">
+                  <a class="nav__links" href="./">
+                    Главная
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./">
+                    О нас
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./">
+                    Сервисы
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./">
+                    Ресурсы
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./">
+                    Проекты
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__footer">
+              <div class="nav__container">
+                <div class="nav__tel">
+                  <h2 class="nav__title">Номер телефона</h2>
+                  <a class="nav__phone" href="tel:+994949449484">+994 94 944 94 84 </a>
+                </div>
+                <div class="nav__social">
+                  <h2 class="nav__title">
+                    Мы в соц.сетях
+                  </h2>
+                  <ul class="nav__slist">
+                    <li class="nav__sitems">
+                      <a class="nav__slink" href="#">
+                        facebook
+                      </a>
+                    </li>
+                    <li class="nav__sitems">
+                      <a class="nav__slink" href="#">
+                        instagram
+                      </a>
+                    </li>
+                    <li class="nav__sitems">
+                      <a class="nav__slink" href="#">
+                        linkedin
+                      </a>
+                    </li>
+                    <li class="nav__sitems">
+                      <a class="nav__slink" href="#">
+                        behance
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+  </header>
+  <!-- #endregion -->
+
+  <!-- #region -->
+  <main>
+    <!-- #region intro-->
+    <section class="intro">
+      <div class="container">
+        <div class="intro__container">
+          <h2 class="intro__title">izlamasdan topamiz :)</h2>
+          <p class="intro__text">Abutech has been eligible to provide the best of services to our clients across the
+            world remaining to our.</p>
+          <a class="intro__play" href="#">
+            <span class="intro__play--text">Смотреть видео</span>
+            <img class="intro__material" src="./images/intro/play.svg" alt="">
+          </a>
+        </div>
+        <div class="intro__subcontainer">
+          <ul class="intro__list">
+            <li class="intro__items">
+              <h2 class="intro__counters">
+                67+
+              </h2>
+              <p class="intro__texts">
+                выполненных
+                проектов
+              </p>
+            </li>
+            <li class="intro__items">
+              <h2 class="intro__counters">
+                40+
+              </h2>
+              <p class="intro__texts">
+                человек в команде
+              </p>
+            </li>
+            <li class="intro__items">
+              <h2 class="intro__counters">
+                230+
+              </h2>
+              <p class="intro__texts">
+                бизнесов продвинули
+              </p>
+            </li>
+            <li class="intro__items">
+              <h2 class="intro__counters">
+                4+
+              </h2>
+              <p class="intro__texts">
+                лет опыта на рынке
+              </p>
+            </li>
+            <li class="intro__items">
+              <h2 class="intro__counters">
+                147k
+              </h2>
+              <p class="intro__texts">
+                просмотров на Behance
+              </p>
+            </li>
+            <li class="intro__items">
+              <h2 class="intro__counters">
+                12
+              </h2>
+              <p class="intro__texts">
+                выигранных
+                футбольных кубков
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region suggest-->
+    <section class="sug">
+      <div class="container">
+        <div class="sug__container">
+          <h2 class="sug__title"><span class="sug__up">ЧТО МЫ</span><br>
+            ПРЕДЛАГАЕМ</h2>
+          <ul class="sug__list">
+            <li class="sug__items">
+              <img class="sug__img" width="100" height="100" src="./images/suggest/programming.svg" alt="programming">
+              <h3 class="sug__head">
+                Программные обеспечеия
+              </h3>
+              <p class="sug__text">
+                В них входять веб-сайты, админ панели, телеграм-боты, системные решение и много другие
+              </p>
+              <a class="sug__link" href="#">
+                <img class="sug__arrow" src="./images/suggest/arrow.svg" alt="forward">
+              </a>
+            </li>
+            <li class="sug__items">
+              <img class="sug__img" width="100" height="100" src="./images/suggest/uxui.svg" alt="ux ui design">
+              <h3 class="sug__head">
+                UX & UI дизайн
+              </h3>
+              <p class="sug__text">
+                Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Donec elementum tellus.
+              </p>
+              <a class="sug__link" href="#">
+                <img class="sug__arrow" src="./images/suggest/arrow.svg" alt="forward">
+              </a>
+            </li>
+            <li class="sug__items">
+              <div class="sug__img">
+                <img class="sug__later" src="./images/suggest/smma.svg" alt="">
+              </div>
+              <h3 class="sug__head">
+                SMM и маркетинг
+              </h3>
+              <p class="sug__text">
+                Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Donec elementum tellus.
+              </p>
+              <a class="sug__link" href="#">
+                <img class="sug__arrow" src="./images/suggest/arrow.svg" alt="forward">
+              </a>
+            </li>
+            <li class="sug__items">
+              <img class="sug__img" width="100" height="100" src="./images/suggest/branding.svg" alt="branding">
+              <h3 class="sug__head">
+                Брендинг
+              </h3>
+              <p class="sug__text">
+                Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Donec elementum tellus.
+              </p>
+              <a class="sug__link" href="#">
+                <img class="sug__arrow" src="./images/suggest/arrow.svg" alt="forward">
+              </a>
+            </li>
+            <li class="sug__items">
+              <div class="sug__img">
+                <img class="sug__later" src="./images/suggest/fxa.svg" alt="fxa">
+              </div>
+              <h3 class="sug__head">
+                Продакшн и продвижение
+              </h3>
+              <p class="sug__text">
+                Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Donec elementum tellus.
+              </p>
+              <a class="sug__link" href="#">
+                <img class="sug__arrow" src="./images/suggest/arrow.svg" alt="forward">
+              </a>
+            </li>
+            <li class="sug__items">
+              <img class="sug__img" width="100" height="100" src="./images/suggest/service.svg" alt="design">
+              <h3 class="sug__head">
+                Дизайн сервисы
+              </h3>
+              <p class="sug__text">
+                Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Donec elementum tellus.
+              </p>
+              <a class="sug__link" href="#">
+                <img class="sug__arrow" src="./images/suggest/arrow.svg" alt="forward">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region services-->
+    <section class="service">
+      <div class="container">
+        <div class="service__container">
+          <div class="service__content">
+            <div class="service__text">
+              <h2 class="service__title">
+                <span class="service__up">НЕ ЗНАЕТЕ</span>
+                <br>
+                КАКАЯ <span class="service__blue"> УСЛУГА </span> ПОДОЙДЕТ ИМЕННО ВАМ?
+              </h2>
+              <p class="service__text">
+                Оставьте заяавку - наши менеджеры разберут вашу текущую ситуацию и помогут подобрать услугу для
+                масштабирования бизнеса
+              </p>
+            </div>
+            <a class="service__button" href="#">
+              узнать больше
+            </a>
+          </div>
+          <div class="service__body">
+
+            <!-- #region sort-->
+            <ul class="service__slist">
+              <li class="service__sitems">
+                <a class="service__filter" href="#">
+                  All
+                </a>
+              </li>
+              <li class="service__sitems">
+                <a class="service__filter service__filter--active" href="#">
+                  Development
+                </a>
+              </li>
+              <li class="service__sitems">
+                <a class="service__filter" href="#">
+                  Design
+                </a>
+              </li>
+              <li class="service__sitems">
+                <a class="service__filter" href="#">
+                  Production
+                </a>
+              </li>
+              <li class="service__sitems">
+                <a class="service__filter" href="#">
+                  Marketing
+                </a>
+              </li>
+            </ul>
+            <!-- #endregion -->
+
+            <!-- #region services-->
+            <ul class="service__list">
+              <li class="service__items">
+                <a class="service__links" href="#">
+                  Кухонная мойка «Формула комфорта»
+                </a>
+              </li>
+              <li class="service__items">
+                <a class="service__links" href="#">
+                  The unseen of spending three years at Pixelgrade
+                </a>
+              </li>
+              <li class="service__items">
+                <a class="service__links" href="#">
+                  Logo and brandbook for the “Lionsgate”
+                </a>
+              </li>
+              <li class="service__items">
+                <a class="service__links" href="#">
+                  Starting your traveling blog with Vasco
+                </a>
+              </li>
+              <li class="service__items">
+                <a class="service__links" href="#">
+                  Caring is the new marketing
+                </a>
+              </li>
+              <li class="service__items">
+                <a class="service__links" href="#">
+                  Starting your traveling blog with Vasco
+                </a>
+              </li>
+              <li class="service__items">
+                <a class="service__links" href="#">
+                  Кухонная мойка «Формула комфорта»
+                </a>
+              </li>
+              <li class="service__items">
+                <a class="service__links" href="#">
+                  Кухонная мойка «Формула комфорта»
+                </a>
+              </li>
+              <li class="service__items">
+                <a class="service__links" href="#">
+                  The unseen of spending three years at Pixelgrade
+                </a>
+              </li>
+              <li class="service__items">
+                <a class="service__links" href="#">
+                  Logo and brandbook for the “Lionsgate”
+                </a>
+              </li>
+              <li class="service__items">
+                <a class="service__links" href="#">
+                  Starting your traveling blog with Vasco
+                </a>
+              </li>
+              <li class="service__items">
+                <a class="service__links" href="#">
+                  Caring is the new marketing
+                </a>
+              </li>
+              <li class="service__items">
+                <a class="service__links" href="#">
+                  Starting your traveling blog with Vasco
+                </a>
+              </li>
+              <li class="service__items">
+                <a class="service__links" href="#">
+                  Кухонная мойка «Формула комфорта»
+                </a>
+              </li>
+            </ul>
+            <!-- #endregion -->
+            <a class="service__plus" href="#">
+              <span class="material-icons">
+                add
+              </span>
+            </a>
+            <a class="service__onemore" href="#">все работы</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region team-->
+    <section class="team">
+      <div class="container">
+        <div class="team__container">
+          <div class="team__content">
+            <h2 class="team__title">
+              <span class="team__up">
+                НАША
+              </span>
+              <br>
+              КОМАНДА
+            </h2>
+            <p class="team__text">
+              Pet owners, Film geeks, Sports Junkies? It’s obvious, the team work is splendid, for they are all either
+              beer nuts or caffeine addicts.
+            </p>
+          </div>
+          <div class="team__body">
+            <ul class="team__list">
+              <li class="team__items">
+                <h3 class="team__name">
+                  Sinfdoshim Maftun
+                </h3>
+                <p class="team__position">
+                  Smm manager
+                </p>
+              </li>
+              <li class="team__items">
+                <h3 class="team__name">
+                  Shovkat aka
+                </h3>
+                <p class="team__position">
+                  art direktor
+                </p>
+              </li>
+              <li class="team__items">
+                <h3 class="team__name">
+                  Oyposhsha Qo‘ziyeva
+                </h3>
+                <p class="team__position">
+                  Project manager
+                </p>
+              </li>
+              <li class="team__items">
+                <h3 class="team__name">
+                  Rustam jiyan
+                </h3>
+                <p class="team__position">
+                  veb dizayner
+                </p>
+              </li>
+              <li class="team__items">
+                <h3 class="team__name">
+                  Alisher qo’shni
+                </h3>
+                <p class="team__position">
+                  veb dizayner
+                </p>
+              </li>
+              <li class="team__items">
+                <h3 class="team__name">
+                  Sanjar taksi
+                </h3>
+                <p class="team__position">
+                  Bekarchi
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region -->
+    <!-- #endregion -->
+  </main>
+  <!-- #endregion -->
+
+  <!-- #region -->
+  <footer>
+
+  </footer>
+  <!-- #endregion -->
+</body>
+
+</html>
