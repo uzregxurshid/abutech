@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abutech</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <!-- #region -->
+  <header class="header">
+    <!-- #region -->
+    <div class="container">
+      <div class="header__container">
+        <div class="header__logo">
+          <a class="header__home" href="./index.html">
+            <img class="header__img" width="126" height="28" src="./images/header/logo.svg" alt="header logo">
+          </a>
+        </div>
+        <div class="header__right">
+          <div class="header__actions">
+            <a class="header__tel" href="tel:+998901234567">
+              <span class="material-icons-outlined">
+                phone_in_talk
+              </span> <span class="header__tel--text"> +99 890 123 45 67</span>
+            </a>
+            <select class="header__selector" name="lng" id="lng">
+              <option value="ru" selected="selected">RU</option>
+              <option value="en">EN</option>
+              <option value="uz">UZ</option>
+            </select>
+            <a class="header__button" href="#">оставить заявку</a>
+          </div>
+          <div class="header__menu">
+            <button class="header__burger" id="toggle" type="button" aria-label="burger-button"><span
+                class="header__burger--text">МЕНЮ</span><span class="material-icons">
+                menu
+              </span></button>
+          </div>
+          <nav class="header__nav nav">
+            <div class="nav__top">
+              <button class="nav__close" id="toggler" type="button" aria-label="close button">
+                <span class="nav__close text" aria-hidden="true">ЗАКРЫТЬ <span class="material-icons-outlined">
+                    close
+                  </span></span>
+              </button>
+            </div>
+            <div class="nav__container">
+              <div class="nav__logo">
+                <a class="nav__home" href="./index.html">
+                  <img class="nav__img" width="126" height="28" src="./images/header/logo.svg" alt="header logo">
+                </a>
+              </div>
+              <form class="nav__langu" action="get">
+                <input class="nav__lngs" type="radio" name="lng" id="en"><span class="nav__z">EN</span>
+                <input class="nav__lngs nav_lngs--active" type="radio" checked="checked" name="lng" id="ru"><span
+                  class="nav__z">RU</span>
+                <input class="nav__lngs" type="radio" name="lng" id="eng"><span class="nav__z">UZ </span>
+              </form>
+              <ul class="nav__list">
+                <li class="nav__items">
+                  <a class="nav__links" href="./">
+                    Главная
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./">
+                    О нас
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./">
+                    Сервисы
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./">
+                    Ресурсы
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./">
+                    Проекты
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./contact.html">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__footer">
+              <div class="nav__container">
+                <div class="nav__tel">
+                  <h2 class="nav__title">Номер телефона</h2>
+                  <a class="nav__phone" href="tel:+994949449484">+994 94 944 94 84 </a>
+                </div>
+                <div class="nav__social">
+                  <h2 class="nav__title">
+                    Мы в соц.сетях
+                  </h2>
+                  <ul class="nav__slist">
+                    <li class="nav__sitems">
+                      <a class="nav__slink" href="#">
+                        facebook
+                      </a>
+                    </li>
+                    <li class="nav__sitems">
+                      <a class="nav__slink" href="#">
+                        instagram
+                      </a>
+                    </li>
+                    <li class="nav__sitems">
+                      <a class="nav__slink" href="#">
+                        linkedin
+                      </a>
+                    </li>
+                    <li class="nav__sitems">
+                      <a class="nav__slink" href="#">
+                        behance
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+  </header>
+  <!-- #endregion -->
+
+  <main>
+    <!-- #region form-->
+    <section class="form">
+      <div class="container">
+        <div class="form__container">
+          <div class="form__left">
+            <h1 class="form__title">
+              <span class="form__up">
+                есть новый или существующий проект?
+              </span>
+              <br>
+              СВЯЖИТЕСЬ И МЫ <span class="form__blue">РЕАЛИЗИРУЕМ</span> ВАШИ ИДЕИ!
+            </h1>
+            <div class="form__bottom">
+              <p class="form__text">
+                Мы в соцсетях
+              </p>
+              <ul class="form__list">
+                <li class="form__items">
+                  <a class="form__links" href="#">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+                <li class="form__items">
+                  <a class="form__links" href="#">
+                    <i class="fab fa-telegram"></i>
+                  </a>
+                </li>
+                <li class="form__items">
+                  <a class="form__links" href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="form__items">
+                  <a class="form__links" href="#">
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="form__right">
+            <form class="form__form" action="get">
+              <div class="form__fio">
+                <input class="form__name" type="text" name="fio" id="fio" placeholder="Ф.И.О" required="required"
+                  autocomplete="off">
+              </div>
+              <div class="form__contact">
+                <input class="form__company" type="text" name="company" placeholder="Название компании" id="company"
+                  required="required" autocomplete="off">
+                <div class="form__tell">
+                  <input class="form__tel" type="tel" name="tel" id="tele" placeholder="+998__ ___ __ __"
+                    required="required" autocomplete="off">
+                  <div class="form__error">
+                    Введите действительный номер</div>
+                </div>
+              </div>
+              <div class="form__aria">
+                <textarea class="form__textarea" name="about" id="about" cols="30" rows="10" required="required"
+                  placeholder="Рассказивайте больше о проекте"></textarea>
+
+              </div>
+              <div class="fomr__filearea">
+                <input class="form__file" type="file" name="file" id="file">
+                <div class="form__define">Необъезательно. Файл должен быть на формате .doc, .pdf, .pptx, .zip</div>
+              </div>
+              <div class="form__button">
+                <input class="form__submit" type="submit" value="отправить">
+              </div>
+            </form>
+          </div>
+          <div class="form__center">
+            <p class="form__text">
+              Мы в соцсетях
+            </p>
+            <ul class="form__list">
+              <li class="form__items">
+                <a class="form__links" href="#">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+              <li class="form__items">
+                <a class="form__links" href="#">
+                  <i class="fab fa-telegram"></i>
+                </a>
+              </li>
+              <li class="form__items">
+                <a class="form__links" href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="form__items">
+                <a class="form__links" href="#">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region order-->
+    <section class="order">
+      <div class="order__container">
+        <div class="order__left">
+          <div class="order__content">
+            <h3 class="order__title">
+              Хотите заказать услуги?
+            </h3>
+            <p class="order__text">
+              Reference site about, giving information on its origins, as well as a random Lipsum generator.
+            </p>
+            <form action="get">
+              <input class="order__tel" type="tel" name="tel" id="tel" placeholder="+998 |" autocomplete="off"
+                required="required">
+              <input class="order__button" type="submit" value="отправить">
+            </form>
+          </div>
+        </div>
+        <div class="order__right">
+          <div class="order__content">
+            <h3 class="order__title">
+              Ознакомтесь с начальными
+              инструкциями
+            </h3>
+            <p class="order__text">
+              Reference site about, giving information on its origins
+            </p>
+            <a class="order__download" href="#">
+              <span class="material-icons">
+                save_alt
+              </span>
+              Скачать бриф
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion -->
+  </main>
+  <!-- #endregion -->
+
+  <!-- #region -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__header">
+          <h2 class="footer__title">
+            Хотите сделать что-то великое? Позвольте вам помочь.
+          </h2>
+          <p class="footer__text">
+            Готовы? Свяжитесь сегодня.
+          </p>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__email">
+            <p class="footer__email--name">
+              E-mail
+            </p>
+            <p class="footer__email--address">
+              info@abutech.com
+            </p>
+          </div>
+          <div class="footer__tel">
+            <p class="footer__tel--name">
+              Номер телефона
+            </p>
+            <p class="footer__tel--address">
+              +994 94 944 94 84
+            </p>
+          </div>
+        </div>
+        <div class="footer__loc">
+          <div class="footer__location">
+            <p class="footer__location--name">
+              Наш офис
+            </p>
+            <div class="footer__location--address">
+              Sebzor street, Xadra square, Tashkent, Uzbekistan
+            </div>
+          </div>
+          <div class="footer__social">
+            <div class="footer__social--name">
+              Мы в соц.сетях
+            </div>
+            <ul class="footer__social--list">
+              <li class="footer__items">
+                <a class="footer__social--links" href="#">
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__items">
+                <a class="footer__social--links" href="#">
+                  Instagram
+                </a>
+              </li>
+              <li class="footer__items">
+                <a class="footer__social--links" href="#">
+                  Telegram
+                </a>
+              </li>
+              <li class="footer__items">
+                <a class="footer__social--links" href="#">
+                  Behance
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__button">
+            <a class="footer__button--primary" href="#">
+              Ознакомиться с услугами
+              <span class="material-icons">
+                arrow_right_alt
+              </span>
+            </a>
+            <a class="footer__button--secondary" href="#">
+              Посмотреть работы
+              <span class="material-icons">
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- #endregion -->
+</body>
+
+</html>

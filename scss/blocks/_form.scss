@@ -1,0 +1,398 @@
+.form {
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    color: #00094A;
+  }
+
+  &__up {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  &__blue {
+    color: #30D2A3;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  &__list {
+    @include list-unstyled;
+    display: flex;
+  }
+
+  &__items {
+    margin-right: 40px;
+  }
+
+  &__links {
+    text-decoration: none;
+    color: #00094A;
+    font-size: 31px;
+  }
+
+  &__name {
+    width: 627px;
+    height: 49px;
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding-left: 20px;
+
+    &::placeholder {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #00094A;
+      opacity: 0.5;
+    }
+  }
+
+  &__company {
+    width: 298px;
+    height: 49px;
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding-left: 20px;
+
+    &::placeholder {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #00094A;
+      opacity: 0.5;
+    }
+  }
+
+  &__tel {
+    &::placeholder {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #00094A;
+      opacity: 0.5;
+    }
+
+    width: 298px;
+    height: 49px;
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding-left: 20px;
+  }
+
+  &__textarea {
+    width: 625px;
+    height: 150px;
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-top: 18px;
+
+    &::placeholder {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #00094A;
+      opacity: 0.5;
+    }
+  }
+
+  &__file {
+    color: #fff;
+
+    &::-webkit-file-upload-button {
+      visibility: hidden;
+    }
+
+    &::before {
+      content: '\e226  Приложите файл';
+      display: inline-block;
+      font-family: "Material Icons";
+      background: #FFFFFF;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      border-radius: 4px;
+      width: 200px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      padding-left: 25px;
+      outline: none;
+      white-space: nowrap;
+      user-select: none;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+    }
+  }
+
+  &__define {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    opacity: 0.7;
+    margin: 0;
+    margin-top: -10px;
+  }
+
+  &__submit {
+    width: 186px;
+    height: 42px;
+    background: #30D2A3;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__center {
+    display: none;
+  }
+
+  &__container {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 55px;
+  }
+
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &__title {
+    width: 529px;
+    margin: 0;
+  }
+
+  &__right {
+    padding-top: 20px;
+  }
+
+  &__contact {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__textarea {
+    margin-top: 20px;
+    resize: vertical;
+  }
+
+  &__file {
+    margin-top: 20px;
+  }
+
+  &__button {
+    margin-top: 30px;
+  }
+
+  &__name,
+  &__company,
+  &__tel,
+  &__textarea {
+
+    &:focus,
+    &:focus-visible,
+    &:focus-within {
+      color: #00094A;
+      opacity: 1;
+      border-color: #00094A;
+    }
+  }
+
+  &__submit {
+    cursor: pointer !important;
+
+    &:hover {
+      opacity: .8;
+      transition: .4s;
+    }
+
+    &:active {
+      opacity: .5;
+    }
+  }
+
+  &__error {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF3636;
+  }
+
+  &__container{
+    justify-content: space-between;
+  }
+  @include max(1200px){
+    &__title{
+      font-size: 40px;
+      line-height: 45px;
+   width: 420px;
+    }
+
+    &__name{
+      width: 500px;
+    }
+    &__contact{
+      width: 500px;
+    }
+    &__company, &__tel{
+      width: 210px;
+    }
+    &__textarea{
+      width: 500px;
+    }
+  }
+
+  @include max(1000px){
+    &__title{
+      font-size: 30px;
+      line-height: 37px;
+      width: 370px;
+    }
+
+    &__up{
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  @include max(930px){
+    &__title{
+      width: 330px;
+    }
+    &__name,&__textarea{
+      width: 390px;
+    }
+    &__contact{
+      width: 390px;
+    }
+    &__company, &__tel{
+      width: 180px;
+    }
+    &__tell{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    &__define{
+      width: 390px;
+    }
+  }
+
+  @include max(767px){
+    &__container{
+      padding-top: 30px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title{
+      width: 390px;
+    }
+    &__bottom{
+      display: none;
+    }
+
+    &__center{
+      display: block
+    }
+  }
+
+  @include max(445px){
+    &__container{
+      padding-top: 40px;
+      align-items: flex-start;
+    }
+    &__title{
+      width: 320px;
+    }
+    &__contact{
+      width: 320px;
+    }
+    &__define{
+      display: none;
+    }
+    &__right{
+      width: 320px;
+      align-self:center;
+    }
+    &__name, &__textarea, &__company, &__tel{
+      width: 320px;
+    }
+    &__tel{
+      margin-top: 20px;
+    }
+    &__contact{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__submit{
+      margin-top: -20px;
+    }
+    &__text{
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__list{
+      width: 320px;
+    }
+  }
+
+  @include max(359px){
+    &__title{
+      width: 270px;
+    }
+
+    &__name, &__tel, &__company, &__textarea{
+      width: 270px;
+    }
+  }
+}
