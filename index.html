@@ -60,6 +60,11 @@
                   <img class="nav__img" width="126" height="28" src="./images/header/logo.svg" alt="header logo">
                 </a>
               </div>
+              <form class="nav__langu" action="get">
+                <input class="nav__lngs" type="radio" name="lng" id="en" ><span class="nav__z">EN</span>
+                <input class="nav__lngs nav_lngs--active" type="radio" checked="checked" name="lng" id="ru"><span class="nav__z">RU</span>
+                <input class="nav__lngs" type="radio" name="lng" id="eng"><span class="nav__z">UZ   </span>
+              </form>           
               <ul class="nav__list">
                 <li class="nav__items">
                   <a class="nav__links" href="./">
@@ -818,8 +823,89 @@
   <!-- #endregion -->
 
   <!-- #region -->
-  <footer>
-    
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__header">
+          <h2 class="footer__title">
+            Хотите сделать что-то великое? Позвольте вам помочь.
+          </h2>
+          <p class="footer__text">
+            Готовы? Свяжитесь сегодня.
+          </p>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__email">
+            <p class="footer__email--name">
+              E-mail
+            </p>
+            <p class="footer__email--address">
+              info@abutech.com
+            </p>
+          </div>
+          <div class="footer__tel">
+            <p class="footer__tel--name">
+              Номер телефона
+            </p>
+            <p class="footer__tel--address">
+              +994 94 944 94 84 
+            </p>
+          </div>
+        </div>
+        <div class="footer__loc">
+          <div class="footer__location">
+            <p class="footer__location--name">
+              Наш офис
+            </p>
+            <div class="footer__location--address">
+              Sebzor street, Xadra square, Tashkent, Uzbekistan
+            </div>
+          </div>
+          <div class="footer__social">
+            <div class="footer__social--name">
+              Мы в соц.сетях
+            </div>
+            <ul class="footer__social--list">
+              <li class="footer__items">
+                <a class="footer__social--links" href="#">
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__items">
+                <a class="footer__social--links" href="#">
+                  Instagram
+                </a>
+              </li>
+              <li class="footer__items">
+                <a class="footer__social--links" href="#">
+                  Telegram
+                </a>
+              </li>
+              <li class="footer__items">
+                <a class="footer__social--links" href="#">
+                  Behance
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__button">
+            <a class="footer__button--primary" href="#">
+              Ознакомиться с услугами
+              <span class="material-icons">
+                arrow_right_alt
+                </span>
+            </a>
+            <a class="footer__button--secondary"  href="#">
+              Посмотреть работы 
+              <span class="material-icons">
+                arrow_right_alt
+                </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
   <!-- #endregion -->
 </body>
