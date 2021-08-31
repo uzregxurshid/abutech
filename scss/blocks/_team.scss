@@ -417,6 +417,10 @@
   }
 
   @include max(375px) {
+    &__text{
+      font-size: 14px;
+line-height: 26px;
+    }
     &__items {
       &:nth-child(1) {
         margin: 0;
@@ -460,6 +464,9 @@
   }
 
   @include max(350px) {
+    &__text{
+      width: 280px;
+    }
     &__items {
       &:nth-child(6) {
         margin-left: -30px;
