@@ -148,7 +148,41 @@
     }
   }
 
-  @include max(1220px){
-    
+  @include max(1220px) {
+    &__img {
+      width: 406.4px;
+      height: 344px;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    &__text {
+      font-size: 14px;
+      width: 650px;
+      line-height: 20px;
+    }
+
+    &__head {
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    &__content{
+      width: 470px;
+    }
+  }
+
+  @include max(1100px){
+    &__special, &__define{
+      font-size: 14px;
+      line-height:17px;
+    }
+    &__img{
+      width: 325px;
+      height: 274px;
+    }
   }
 }

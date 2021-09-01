@@ -6516,4 +6516,38 @@ img {
 .help__items:nth-child(4) .help__tlist {
   height: 110px;
 }
+
+@media only screen and (max-width: 1220px) {
+  .help__img {
+    width: 406.4px;
+    height: 344px;
+  }
+  .help__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .help__text {
+    font-size: 14px;
+    width: 650px;
+    line-height: 20px;
+  }
+  .help__head {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .help__content {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .help__special, .help__define {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .help__img {
+    width: 325px;
+    height: 274px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
