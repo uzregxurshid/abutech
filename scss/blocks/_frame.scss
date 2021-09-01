@@ -1,0 +1,286 @@
+.frame {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__header {
+    padding-top: 20px;
+  }
+
+  &__megas,
+  &__megac,
+  &__megae {
+    margin: 0;
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 180px;
+    line-height: 216px;
+    color: #00094A;
+  }
+
+  &__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    opacity: 0.7;
+  }
+
+  &__text {
+    margin-left: 130px;
+    width: 249px;
+  }
+
+  &__megas,
+  &__megac,
+  &__megae {
+    display: flex;
+    align-items: center;
+    width: 870px;
+    justify-content: space-between;
+  }
+
+  &__megac {
+    justify-content: flex-end;
+  }
+
+  &__deco {
+    width: 56.5px;
+    height: 56.5px;
+    margin-right: 54px;
+    background: radial-gradient(59.38% 59.38% at 59.38% 31.87%, rgba(6, 163, 156, 0.07) 1.01%, #06A39C 100%);
+    transform: rotate(45deg);
+    border-radius: 20%;
+  }
+
+  &__megas {
+    position: relative;
+
+    &::before {
+      background: #ffffff;
+      background-size: 11px 11px;
+      width: 11px;
+      height: 11px;
+      position: absolute;
+      left: -25px;
+      top: 35px;
+      border-radius: 50%;
+      border: 3px solid #000000;
+      content: "";
+    }
+
+    &::after {
+      background: #ffffff;
+      background-size: 11px 11px;
+      width: 11px;
+      height: 11px;
+      position: absolute;
+      left: 368px;
+      top: 198px;
+      border-radius: 50%;
+      border: 3px solid #000000;
+      content: "";
+    }
+  }
+
+
+  &__megac {
+    position: relative;
+
+    &::before {
+      background: #ffffff;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      right: -25px;
+      top: 35px;
+      border-radius: 50%;
+      border: 6px solid #000000;
+      content: "";
+    }
+  }
+
+  &__megae {
+    position: relative;
+
+    &::before {
+      background: #ffffff;
+      border: 3px solid #000000;
+      border-radius: 50%;
+      width: 11px;
+      height: 11px;
+      position: absolute;
+      left: 330px;
+      top: 130px;
+      content: "";
+    }
+  }
+
+  &__art {
+    width: 60px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #000000;
+    box-shadow: 20px 20px #000000;
+    position: relative;
+
+    &::after {
+      width: 14px;
+      height: 6px;
+      border: 1px solid #fff;
+      background: #ffffff;
+      background-size: 14px 4px;
+      position: absolute;
+      content: "";
+      top: 19px;
+      left: 35px;
+    }
+  }
+
+  @include max(1000px) {
+
+    &__megac,
+    &__megas,
+    &__megae {
+      font-size: 120px;
+      width: 575px;
+      line-height: 160px;
+    }
+
+    &__megas {
+      &::after {
+        left: 241px;
+        top: 146px;
+      }
+    }
+
+    &__megae {
+      &::before {
+        left: 239px;
+        top: 94px;
+      }
+    }
+
+    &__megac {
+      &::before {
+        width: 14px;
+        height: 14px;
+        border-width: 3px;
+      }
+    }
+  }
+
+  @include max(700px) {
+
+    &__megac,
+    &__megae,
+    &__megas {
+      font-size: 80px;
+      width: 375px;
+      line-height: 100px;
+    }
+
+    &__deco {
+      width: 35px;
+      height: 35px;
+    }
+
+    &__text {
+      font-size: 10px;
+      line-height: 12px;
+      margin: 0;
+      width: 150px;
+    }
+
+    &__megas {
+      &::before {
+        top: 17px;
+      }
+
+      &::after {
+        left: 156px;
+        top: 88px;
+      }
+    }
+
+    &__megae {
+      &::before {
+        left: 155px;
+        top: 70px;
+      }
+    }
+
+    &__megac {
+      &::before {
+        top: 14px;
+        right: -27px;
+      }
+    }
+  }
+
+  @include max(450px) {
+
+    &__megac,
+    &__megae,
+    &__megac {
+      font-size: 80px;
+      line-height: 96px;
+    }
+
+    &__megac,
+    &__megae,
+    &__megas {
+      width: 320px;
+    }
+
+    &__text {
+      margin-top: 90px;
+    }
+
+    &__art {
+      display: none;
+    }
+
+    &__megas {
+      &::before {
+        left: 66px;
+        top: 105px;
+        opacity: .3;
+      }
+
+      &::after {
+        opacity: 0.3;
+        left: 200px;
+        top: 1px;
+      }
+    }
+
+    &__megac {
+      &::before {
+        top: 93px;
+        right: 59px;
+        opacity: .3;
+      }
+    }
+
+    &__megae {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  @include max(350px) {
+
+    &__megac,
+    &__megas,
+    &__megae {
+      width: 270px;
+    }
+  }
+}

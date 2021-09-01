@@ -487,6 +487,46 @@ template {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeueBold.eot");
+  src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("../fonts/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueBold.woff2") format("woff2"), url("../fonts/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeueBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeue-Thin.eot");
+  src: local("Bebas Neue Thin"), local("BebasNeue-Thin"), url("../fonts/BebasNeue-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue-Thin.woff2") format("woff2"), url("../fonts/BebasNeue-Thin.woff") format("woff"), url("../fonts/BebasNeue-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeueLight.eot");
+  src: local("Bebas Neue Light"), local("BebasNeueLight"), url("../fonts/BebasNeueLight.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueLight.woff2") format("woff2"), url("../fonts/BebasNeueLight.woff") format("woff"), url("../fonts/BebasNeueLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Book';
+  src: url("../fonts/BebasNeueBook.eot");
+  src: local("Bebas Neue Book"), local("BebasNeueBook"), url("../fonts/BebasNeueBook.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueBook.woff2") format("woff2"), url("../fonts/BebasNeueBook.woff") format("woff"), url("../fonts/BebasNeueBook.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeueRegular.eot");
+  src: local("Bebas Neue Regular"), local("BebasNeueRegular"), url("../fonts/BebasNeueRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueRegular.woff2") format("woff2"), url("../fonts/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeueRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* GENERAL */
 html {
   -webkit-box-sizing: border-box;
@@ -4303,6 +4343,255 @@ img {
     width: 270px;
   }
   .form__name, .form__tel, .form__company, .form__textarea {
+    width: 270px;
+  }
+}
+
+.frame__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.frame__header {
+  padding-top: 20px;
+}
+
+.frame__megas, .frame__megac, .frame__megae {
+  margin: 0;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 180px;
+  line-height: 216px;
+  color: #00094A;
+}
+
+.frame__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  opacity: 0.7;
+}
+
+.frame__text {
+  margin-left: 130px;
+  width: 249px;
+}
+
+.frame__megas, .frame__megac, .frame__megae {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 870px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.frame__megac {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.frame__deco {
+  width: 56.5px;
+  height: 56.5px;
+  margin-right: 54px;
+  background: radial-gradient(59.38% 59.38% at 59.38% 31.87%, rgba(6, 163, 156, 0.07) 1.01%, #06A39C 100%);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 20%;
+}
+
+.frame__megas {
+  position: relative;
+}
+
+.frame__megas::before {
+  background: #ffffff;
+  background-size: 11px 11px;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: -25px;
+  top: 35px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+  content: "";
+}
+
+.frame__megas::after {
+  background: #ffffff;
+  background-size: 11px 11px;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 368px;
+  top: 198px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+  content: "";
+}
+
+.frame__megac {
+  position: relative;
+}
+
+.frame__megac::before {
+  background: #ffffff;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: -25px;
+  top: 35px;
+  border-radius: 50%;
+  border: 6px solid #000000;
+  content: "";
+}
+
+.frame__megae {
+  position: relative;
+}
+
+.frame__megae::before {
+  background: #ffffff;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 330px;
+  top: 130px;
+  content: "";
+}
+
+.frame__art {
+  width: 60px;
+  height: 4px;
+  border-radius: 3px;
+  background-color: #000000;
+  -webkit-box-shadow: 20px 20px #000000;
+          box-shadow: 20px 20px #000000;
+  position: relative;
+}
+
+.frame__art::after {
+  width: 14px;
+  height: 6px;
+  border: 1px solid #fff;
+  background: #ffffff;
+  background-size: 14px 4px;
+  position: absolute;
+  content: "";
+  top: 19px;
+  left: 35px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .frame__megac, .frame__megas, .frame__megae {
+    font-size: 120px;
+    width: 575px;
+    line-height: 160px;
+  }
+  .frame__megas::after {
+    left: 241px;
+    top: 146px;
+  }
+  .frame__megae::before {
+    left: 239px;
+    top: 94px;
+  }
+  .frame__megac::before {
+    width: 14px;
+    height: 14px;
+    border-width: 3px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .frame__megac, .frame__megae, .frame__megas {
+    font-size: 80px;
+    width: 375px;
+    line-height: 100px;
+  }
+  .frame__deco {
+    width: 35px;
+    height: 35px;
+  }
+  .frame__text {
+    font-size: 10px;
+    line-height: 12px;
+    margin: 0;
+    width: 150px;
+  }
+  .frame__megas::before {
+    top: 17px;
+  }
+  .frame__megas::after {
+    left: 156px;
+    top: 88px;
+  }
+  .frame__megae::before {
+    left: 155px;
+    top: 70px;
+  }
+  .frame__megac::before {
+    top: 14px;
+    right: -27px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .frame__megac, .frame__megae, .frame__megac {
+    font-size: 80px;
+    line-height: 96px;
+  }
+  .frame__megac, .frame__megae, .frame__megas {
+    width: 320px;
+  }
+  .frame__text {
+    margin-top: 90px;
+  }
+  .frame__art {
+    display: none;
+  }
+  .frame__megas::before {
+    left: 66px;
+    top: 105px;
+    opacity: .3;
+  }
+  .frame__megas::after {
+    opacity: 0.3;
+    left: 200px;
+    top: 1px;
+  }
+  .frame__megac::before {
+    top: 93px;
+    right: 59px;
+    opacity: .3;
+  }
+  .frame__megae::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .frame__megac, .frame__megas, .frame__megae {
     width: 270px;
   }
 }

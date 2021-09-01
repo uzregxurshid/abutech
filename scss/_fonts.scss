@@ -214,3 +214,62 @@
   font-weight: 100;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeueBold.eot');
+  src: local('Bebas Neue Bold'), local('BebasNeueBold'),
+      url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/BebasNeueBold.woff2') format('woff2'),
+      url('../fonts/BebasNeueBold.woff') format('woff'),
+      url('../fonts/BebasNeueBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeue-Thin.eot');
+  src: local('Bebas Neue Thin'), local('BebasNeue-Thin'),
+      url('../fonts/BebasNeue-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/BebasNeue-Thin.woff2') format('woff2'),
+      url('../fonts/BebasNeue-Thin.woff') format('woff'),
+      url('../fonts/BebasNeue-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeueLight.eot');
+  src: local('Bebas Neue Light'), local('BebasNeueLight'),
+      url('../fonts/BebasNeueLight.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/BebasNeueLight.woff2') format('woff2'),
+      url('../fonts/BebasNeueLight.woff') format('woff'),
+      url('../fonts/BebasNeueLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Book';
+  src: url('../fonts/BebasNeueBook.eot');
+  src: local('Bebas Neue Book'), local('BebasNeueBook'),
+      url('../fonts/BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/BebasNeueBook.woff2') format('woff2'),
+      url('../fonts/BebasNeueBook.woff') format('woff'),
+      url('../fonts/BebasNeueBook.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeueRegular.eot');
+  src: local('Bebas Neue Regular'), local('BebasNeueRegular'),
+      url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+      url('../fonts/BebasNeueRegular.woff') format('woff'),
+      url('../fonts/BebasNeueRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
