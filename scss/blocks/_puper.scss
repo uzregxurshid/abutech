@@ -1,0 +1,346 @@
+.puper {
+  &__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__up {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 180px;
+    line-height: 216px;
+    color: #00094A;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #00094A;
+    opacity: 0.5;
+    width: 420px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__s,
+  &__c,
+  &__e {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__text {
+    margin-left: 77px;
+    margin-top: 60px;
+  }
+
+  &__deco {
+    content: url("../images/puper/deco.svg");
+    margin-right: 200px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #06A39C;
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+    margin-right: 90px;
+  }
+
+  &__icon {
+    margin-left: 15px;
+  }
+
+  &__s {
+    position: relative;
+
+    &::before {
+      width: 73px;
+      height: 73px;
+      border-radius: 20%;
+      background: conic-gradient(from 182.52deg at 50% 50%, #30D2A3 0deg, rgba(48, 210, 163, 0) 360deg);
+      opacity: 0.5;
+      position: absolute;
+      content: "";
+      left: 113px;
+      top: 114px;
+      transform: rotate(-45deg);
+    }
+
+    .puper__up {
+      position: relative;
+
+      &:before {
+        width: 11px;
+        position: absolute;
+        height: 11px;
+        border-radius: 50%;
+        border: 3px solid #000;
+        background: #fff;
+        content: "";
+        left: -35px;
+        top: 10px;
+      }
+    }
+
+    .puper__text {
+      position: relative;
+
+      &::after {
+        width: 11px;
+        position: absolute;
+        height: 11px;
+        border-radius: 50%;
+        border: 3px solid #000;
+        background: #fff;
+        content: "";
+        right: -1px;
+        top: -43px;
+      }
+    }
+  }
+
+  &__c {
+    position: relative;
+
+    .puper__up {
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(252, 252, 252, 0.5) 100%), url("../images/puper/decos.svg");
+      background-repeat: no-repeat;
+      background-position: 90% 90%;
+    }
+  }
+
+  &__e {
+    justify-content: flex-start;
+    padding-left: 100px;
+
+    .puper__up {
+      position: relative;
+
+      &::before {
+        background: #FFFFFF;
+        border: 6px solid #000000;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        position: absolute;
+        content: "";
+        top: 114px;
+        right: -124px;
+      }
+    }
+  }
+
+  &__text {
+    &--none {
+      display: none;
+    }
+  }
+
+  @include max(1100px) {
+    &__up {
+      font-size: 100px;
+      line-height: 150px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 17px;
+      width: 300px;
+    }
+
+    &__s {
+      &::before {
+        top: 78px;
+        left: 191px;
+      }
+    }
+
+    &__c {
+      .puper__up {
+        background-size: 26%;
+      }
+    }
+  }
+
+  @include max(900px) {
+    &__deco {
+      margin-right: 90px;
+    }
+  }
+
+  @include max(760px) {
+    &__up {
+      font-size: 80px;
+      line-height: 96px;
+    }
+
+    &__text {
+      font-size: 10px;
+      line-height: 15px;
+    }
+
+    &__c {
+      flex-direction: row-reverse;
+    }
+
+    &__deco {
+      margin-right: 0;
+      margin-left: 28px;
+      transform: scale(0.6);
+      margin-top: -120px;
+    }
+
+    &__link {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__e {
+      flex-direction: column-reverse;
+    }
+
+    &__header {
+      position: relative;
+    }
+
+    &__link {
+      margin-right: 0;
+      margin-top: 10px;
+    }
+
+    &__text {
+      display: none;
+
+      &--none {
+        display: inline-block;
+        margin: 0;
+        width: 50%;
+        pointer-events: none;
+        margin-right: 60px;
+      }
+    }
+
+    &__s {
+      justify-content: flex-start;
+
+      &::before {
+        width: 42px;
+        height: 42px;
+        top: 53px;
+        left: 56px;
+        z-index: 2;
+      }
+
+      .puper__up {
+        &::before {
+          top: 101px;
+          left: 74px;
+          opacity: .5;
+        }
+      }
+    }
+
+    &__c {
+      .puper__up {
+        background: none;
+      }
+    }
+
+    &__e {
+      .puper__up {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(252, 252, 252, 0.5) 100%), url("../images/puper/decos.svg");
+        background-repeat: no-repeat;
+        background-position: 78% 90%;
+        background-size: 20%;
+
+        &::before {
+          left: 123px;
+          top: -24px;
+          width: 15px;
+          height: 15px;
+          border-width: 3px;
+          opacity: .5;
+        }
+      }
+    }
+  }
+
+  @include max(480px) {
+    &__e {
+      padding-left: 0;
+    }
+
+    &__no {
+      white-space: nowrap;
+    }
+
+    &__text {
+      &--none {
+        margin-right: 10px;
+        width: 150px;
+      }
+    }
+
+    &__link {
+      align-items: flex-end;
+    }
+  }
+
+  @include max(350px) {
+    &__deco {
+      margin-left: 10px;
+
+    }
+
+    &__up {
+      font-size: 70px;
+      line-height: 78px;
+    }
+
+    &__no {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__icon {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__text {
+      &--none {
+        width: 120px;
+      }
+    }
+
+    &__s {
+      &::before {
+        top: 38px;
+        left: 74px;
+      }
+
+      .puper__up {
+        &::before {
+          top: 66px;
+          left: 39px;
+        }
+      }
+    }
+  }
+
+
+}

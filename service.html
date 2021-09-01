@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abutech</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <!-- #region -->
+  <header class="header">
+    <!-- #region -->
+    <div class="container">
+      <div class="header__container">
+        <div class="header__logo">
+          <a class="header__home" href="./index.html">
+            <img class="header__img" width="126" height="28" src="./images/header/logo.svg" alt="header logo">
+          </a>
+        </div>
+        <div class="header__right">
+          <div class="header__actions">
+            <a class="header__tel" href="tel:+998901234567">
+              <span class="material-icons-outlined">
+                phone_in_talk
+              </span> <span class="header__tel--text"> +99 890 123 45 67</span>
+            </a>
+            <select class="header__selector" name="lng" id="lng">
+              <option value="ru" selected="selected">RU</option>
+              <option value="en">EN</option>
+              <option value="uz">UZ</option>
+            </select>
+            <a class="header__button" href="#">оставить заявку</a>
+          </div>
+          <div class="header__menu">
+            <button class="header__burger" id="toggle" type="button" aria-label="burger-button"><span
+                class="header__burger--text">МЕНЮ</span><span class="material-icons">
+                menu
+              </span></button>
+          </div>
+          <nav class="header__nav nav">
+            <div class="nav__top">
+              <button class="nav__close" id="toggler" type="button" aria-label="close button">
+                <span class="nav__close text" aria-hidden="true">ЗАКРЫТЬ <span class="material-icons-outlined">
+                    close
+                  </span></span>
+              </button>
+            </div>
+            <div class="nav__container">
+              <div class="nav__logo">
+                <a class="nav__home" href="./index.html">
+                  <img class="nav__img" width="126" height="28" src="./images/header/logo.svg" alt="header logo">
+                </a>
+              </div>
+              <form class="nav__langu" action="get">
+                <input class="nav__lngs" type="radio" name="lng" id="en"><span class="nav__z">EN</span>
+                <input class="nav__lngs nav_lngs--active" type="radio" checked="checked" name="lng" id="ru"><span
+                  class="nav__z">RU</span>
+                <input class="nav__lngs" type="radio" name="lng" id="eng"><span class="nav__z">UZ </span>
+              </form>
+              <ul class="nav__list">
+                <li class="nav__items">
+                  <a class="nav__links" href="./index.html">
+                    Главная
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./">
+                    О нас
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./service.html">
+                    Сервисы
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./resource.html">
+                    Ресурсы
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./works.html">
+                    Проекты
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./contact.html">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__footer">
+              <div class="nav__container">
+                <div class="nav__tel">
+                  <h2 class="nav__title">Номер телефона</h2>
+                  <a class="nav__phone" href="tel:+994949449484">+994 94 944 94 84 </a>
+                </div>
+                <div class="nav__social">
+                  <h2 class="nav__title">
+                    Мы в соц.сетях
+                  </h2>
+                  <ul class="nav__slist">
+                    <li class="nav__sitems">
+                      <a class="nav__slink" href="#">
+                        facebook
+                      </a>
+                    </li>
+                    <li class="nav__sitems">
+                      <a class="nav__slink" href="#">
+                        instagram
+                      </a>
+                    </li>
+                    <li class="nav__sitems">
+                      <a class="nav__slink" href="#">
+                        linkedin
+                      </a>
+                    </li>
+                    <li class="nav__sitems">
+                      <a class="nav__slink" href="#">
+                        behance
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+  </header>
+  <!-- #endregion -->
+
+  <main>
+
+    <!-- #region article__intro-->
+    <div class="puper">
+      <div class="container">
+        <div class="puper__container">
+          <div class="puper__header">
+            <div class="puper__s">
+              <span class="puper__up">
+                What we
+              </span>
+              <span class="puper__text">
+                We create solutions that solve your business pain, respond market needs, transform internal operations,
+                and follow the latest digital trends
+              </span>
+            </div>
+            <div class="puper__c">
+              <span class="puper__deco">
+
+              </span>
+              <span class="puper__up">
+                can do
+              </span>
+            </div>
+            <div class="puper__e">
+              <a class="puper__link" href="#">
+                <span class="puper__text puper__text--none">
+                  We create solutions that solve your business pain, respond market needs, transform internal
+                  operations,
+                  and follow the latest digital trends
+                </span>
+                <span class="puper__no">
+                  Create project
+                </span>
+                <span class="puper__icon material-icons">
+                  arrow_right_alt
+                </span>
+              </a>
+              <span class="puper__up">
+                for you
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region help-->
+    <section class="help">
+      <div class="container">
+        <div class="help__container">
+          <h2 class="help__title">
+            Solutions for your business
+          </h2>
+          <p class="help__text">
+            Abutechdagi bolalar sizga daxshat xizmat ko’rsatadi. Vushshim malades, mirovoy bolalar hammasi. O’z ishini
+            ustalari ular. Ayniqsa veb dizayneri. Bemalol ishanorsayz bo’ladi.
+          </p>
+
+          <ul class="help__list">
+            <li class="help__items">
+              <img class="help__img" src="./images/help/software.png" alt="Software development">
+              <div class="help__content">
+                <h3 class="help__head">
+                  Software development
+                </h3>
+                <img class="help__img--none" src="./images/help/software.png" alt="Software development">
+
+                <p class="help__define">
+                  Biz mashnaqa ishlardi do’ndvoramiz:
+                </p>
+                <ul class="help__tlist">
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Landing pages
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Corporate websites
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      E-commerce
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Tech Support
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Telegram bots
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      System solutions
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Teaching platforms
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      SaaS projects
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Admin panels and dashboards
+                    </span>
+                  </li>
+
+                </ul>
+                <a class="help__link" href="#">
+                  Learn more <span class="material-icons">
+                    arrow_right_alt
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li class="help__items">
+              <img class="help__img" src="./images/help/uxui.png" alt="UX&UI design">
+              <div class="help__content">
+                <h3 class="help__head">
+                  UX&UI design
+                </h3>
+                <img class="help__img--none" src="./images/help/uxui.png" alt="UX&UI design">
+
+                <p class="help__define">
+                  Diam pretium vel dictum mi eget suspendisse vitae:
+                </p>
+                <ul class="help__tlist">
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Web design
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Mobile app design
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Design systems
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Interface design
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Redesign
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Usability testing
+                    </span>
+                  </li>
+                </ul>
+                <a class="help__link" href="#">
+                  Learn more <span class="material-icons">
+                    arrow_right_alt
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li class="help__items">
+              <img class="help__img" src="./images/help/brand.png" alt="Branding">
+              <div class="help__content">
+                <h3 class="help__head">
+                  Branding
+                </h3>
+                <img class="help__img--none" src="./images/help/brand.png" alt="Branding">
+
+                <p class="help__define">
+                  Diam pretium vel dictum mi eget suspendisse vitae:
+                </p>
+                <ul class="help__tlist">
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Logo creating
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Naming
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Brandbook
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Brand promotion
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Brand identity
+                    </span>
+                  </li>
+                </ul>
+                <a class="help__link" href="#">
+                  Learn more <span class="material-icons">
+                    arrow_right_alt
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li class="help__items">
+              <img class="help__img" src="./images/help/product.png" alt="Production & Promotion">
+              <div class="help__content">
+                <h3 class="help__head">
+                  Production & Promotion
+                </h3>
+                <img class="help__img--none" src="./images/help/product.png" alt="Production & Promotion">
+
+                <p class="help__define">
+                  Diam pretium vel dictum mi eget suspendisse vitae:
+                </p>
+                <ul class="help__tlist">
+                  <li class="help__titems">
+                    <span class="help__special">
+                      2D motion ads
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Video production
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      3D motion ads
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Something cool
+                    </span>
+                  </li>
+                </ul>
+                <a class="help__link" href="#">
+                  Learn more <span class="material-icons">
+                    arrow_right_alt
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li class="help__items">
+              <img class="help__img" src="./images/help/smm.png" alt="Marketing & SMM">
+              <div class="help__content">
+                <h3 class="help__head">
+                  Marketing & SMM
+                </h3>
+                <img class="help__img--none" src="./images/help/smm.png" alt="Marketing & SMM">
+
+                <p class="help__define">
+                  Diam pretium vel dictum mi eget suspendisse vitae:
+                </p>
+                <ul class="help__tlist">
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Social media marketing
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Digital marketing
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Traditional marketing
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      SEO & SEM
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Copywriting
+                    </span>
+                  </li>
+                </ul>
+                <a class="help__link" href="#">
+                  Learn more <span class="material-icons">
+                    arrow_right_alt
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li class="help__items">
+              <img class="help__img" src="./images/help/design.png" alt="Design services">
+              <div class="help__content">
+                <h3 class="help__head">
+                  Design services
+                </h3>
+                <img class="help__img--none" src="./images/help/design.png" alt="Design services">
+
+                <p class="help__define">
+                  Diam pretium vel dictum mi eget suspendisse vitae:
+                </p>
+                <ul class="help__tlist">
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Package design
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Posts
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Billboard design
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Flyers
+                    </span>
+                  </li>
+                  <li class="help__titems">
+                    <span class="help__special">
+                      Business cards
+                    </span>
+                  </li>
+                </ul>
+                <a class="help__link" href="#">
+                  Learn more <span class="material-icons">
+                    arrow_right_alt
+                  </span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region order-->
+    <section class="order">
+      <div class="order__container">
+        <div class="order__left">
+          <div class="order__content">
+            <h3 class="order__title">
+              Хотите заказать услуги?
+            </h3>
+            <p class="order__text">
+              Reference site about, giving information on its origins, as well as a random Lipsum generator.
+            </p>
+            <form action="get">
+              <input class="order__tel" type="tel" name="tel" id="tel" placeholder="+998 |" autocomplete="off"
+                required="required">
+              <input class="order__button" type="submit" value="отправить">
+            </form>
+          </div>
+        </div>
+        <div class="order__right">
+          <div class="order__content">
+            <h3 class="order__title">
+              Ознакомтесь с начальными
+              инструкциями
+            </h3>
+            <p class="order__text">
+              Reference site about, giving information on its origins
+            </p>
+            <a class="order__download" href="#">
+              <span class="material-icons">
+                save_alt
+              </span>
+              Скачать бриф
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion -->
+  </main>
+
+  <!-- #region -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__header">
+          <h2 class="footer__title">
+            Хотите сделать что-то великое? Позвольте вам помочь.
+          </h2>
+          <p class="footer__text">
+            Готовы? Свяжитесь сегодня.
+          </p>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__email">
+            <p class="footer__email--name">
+              E-mail
+            </p>
+            <p class="footer__email--address">
+              info@abutech.com
+            </p>
+          </div>
+          <div class="footer__tel">
+            <p class="footer__tel--name">
+              Номер телефона
+            </p>
+            <p class="footer__tel--address">
+              +994 94 944 94 84
+            </p>
+          </div>
+        </div>
+        <div class="footer__loc">
+          <div class="footer__location">
+            <p class="footer__location--name">
+              Наш офис
+            </p>
+            <div class="footer__location--address">
+              Sebzor street, Xadra square, Tashkent, Uzbekistan
+            </div>
+          </div>
+          <div class="footer__social">
+            <div class="footer__social--name">
+              Мы в соц.сетях
+            </div>
+            <ul class="footer__social--list">
+              <li class="footer__items">
+                <a class="footer__social--links" href="#">
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__items">
+                <a class="footer__social--links" href="#">
+                  Instagram
+                </a>
+              </li>
+              <li class="footer__items">
+                <a class="footer__social--links" href="#">
+                  Telegram
+                </a>
+              </li>
+              <li class="footer__items">
+                <a class="footer__social--links" href="#">
+                  Behance
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__button">
+            <a class="footer__button--primary" href="#">
+              Ознакомиться с услугами
+              <span class="material-icons">
+                arrow_right_alt
+              </span>
+            </a>
+            <a class="footer__button--secondary" href="#">
+              Посмотреть работы
+              <span class="material-icons">
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- #endregion -->
+</body>
+
+</html>
