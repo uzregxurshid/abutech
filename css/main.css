@@ -5161,4 +5161,121 @@ img {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+
+.article__light {
+  display: none;
+  margin-top: 100px;
+  height: 150px;
+  width: 89vw;
+  background: #F5F5F5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.article__light--head {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #00094A;
+}
+
+.article__light--icon {
+  font-size: 26px !important;
+  margin-right: 15px;
+}
+
+.article__light--block {
+  cursor: pointer;
+  width: 285px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #E53A60;
+}
+
+.article__light--block:hover {
+  background: #f70035;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.article__light--block:active {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+@media only screen and (max-width: 1300px) {
+  .article__items {
+    width: 370px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .article__items {
+    width: 350px;
+  }
+  .article__head {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .article__text {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .article__date {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .article__items {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .article__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .article__items {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .article__items:nth-child(5), .article__items:nth-child(6) {
+    display: none;
+  }
+  .article__light {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 /*# sourceMappingURL=main.css.map */
