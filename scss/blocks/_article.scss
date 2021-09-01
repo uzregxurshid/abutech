@@ -1,0 +1,47 @@
+.article {
+  &__container {
+    padding-top: 70px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #00094A;
+  }
+
+  &__list {
+    @include list-unstyled;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__head {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  &__items {
+    width: 407px;
+    box-shadow: 0px 15px 50px rgba(0, 9, 74, 0.1);
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    opacity: 0.6;
+  }
+
+  &__content{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
