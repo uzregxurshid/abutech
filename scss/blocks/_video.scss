@@ -1,5 +1,6 @@
 .video {
   &__container {
+    padding-top: 28px;
     display: flex;
     flex-direction: column;
   }
@@ -96,7 +97,7 @@
   }
 
   &__items {
-    &:nth-child(1) {
+    &:nth-child(2) {
       .video__link {
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../images/video/second.png");
         background-size: cover;
@@ -104,7 +105,7 @@
       }
     }
 
-    &:nth-child(2) {
+    &:nth-child(3) {
       .video__link {
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../images/video/third.png");
         background-size: cover;
@@ -112,7 +113,7 @@
       }
     }
 
-    &:nth-child(3) {
+    &:nth-child(4) {
       .video__link {
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../images/video/fourth.png");
         background-size: cover;
@@ -136,5 +137,242 @@
 
   &__items~&__items {
     margin-left: 30px;
+  }
+
+  &__button {
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: red;
+    box-shadow: 10px 14px 40px rgba(10, 15, 54, 0.15);
+  }
+
+  &__list {
+    position: relative;
+  }
+
+  &__left,
+  &__right {
+    position: absolute;
+    display: none;
+  }
+
+  &__right {
+    right: -20px;
+  }
+
+  &__left {
+    left: -20px;
+  }
+
+  @include max(1360px) {
+
+    &__linkf {
+      width: 588px;
+      height: 320px;
+    }
+
+    &__link {
+      width: 320px;
+      height: 320px;
+    }
+
+    &__items {
+      width: 320px;
+    }
+
+    &__list {
+      justify-content: space-between;
+    }
+
+  }
+
+  @include max(1200px) {
+    &__hide {
+      display: none;
+    }
+  }
+
+  @include max(1185px) {
+    &__linkf {
+      width: 470.4px;
+      height: 256px;
+    }
+  }
+
+  @include max(1100px) {
+    &__link {
+      width: 256px;
+      height: 256px;
+    }
+
+    &__items {
+      width: 256px;
+    }
+
+    &__head {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    &__content {
+      width: 40%;
+    }
+  }
+
+  @include max(880px) {
+    &__fsz {
+      font-size: 37px !important;
+    }
+
+    &__headf {
+      text-overflow: ellipsis;
+      line-clamp: 2;
+      height: 50px;
+      overflow: hidden;
+    }
+
+    &__content {
+      width: 35%;
+    }
+
+    &__link {
+      width: 204px;
+      height: 204px;
+    }
+
+    &__items {
+      width: 204px;
+    }
+
+  }
+
+  @include max(830px) {
+    &__itemsf {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__content {
+      width: 60%;
+    }
+
+    &__media {
+      display: none;
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  @include max(730px) {
+    &__link {
+      width: 150px;
+      height: 150px;
+    }
+
+    &__items {
+      width: 150px;
+    }
+
+    &__date {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &__headf {
+      height: auto;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    &__none {
+      display: none;
+    }
+
+    &__linkf {
+      width: 320px;
+      height: 174px;
+    }
+
+    &__content {
+      width: 320px;
+    }
+  }
+
+  @include max(550px) {
+    &__items {
+      &:nth-child(4) {
+        display: none;
+      }
+    }
+
+    &__list {
+      justify-content: center;
+    }
+  }
+
+  @include max(425px) {
+
+    &__left,
+    &__right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__button {
+      background: #fff;
+      cursor: pointer;
+    }
+
+    &__left {
+      left: -22px;
+      top: 66px;
+    }
+
+    &__list {
+      position: relative;
+    }
+
+    &__right {
+      right: -22px;
+      top: 66px;
+    }
+  }
+
+  @include max(359px) {
+    &__itemsf {
+      width: 270px;
+    }
+
+    &__linkf{
+      width: 270px;
+    }
+
+    &__content{
+      width: 270px;
+    }
+    &__items{
+      width: 140px;
+    }
+    &__link{
+      width: 140px;
+      height: 140px;
+    }
+    &__items ~ &__items{
+      margin-left: 10px;
+    }
   }
 }
