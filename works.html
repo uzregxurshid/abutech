@@ -146,108 +146,241 @@
   <!-- #endregion -->
 
   <main>
-    <!-- #region form-->
-    <section class="form">
+
+    <!-- #region article__intro-->
+    <div class="super">
       <div class="container">
-        <div class="form__container">
-          <div class="form__left">
-            <h1 class="form__title">
-              <span class="form__up">
-                есть новый или существующий проект?
-              </span>
-              <br>
-              СВЯЖИТЕСЬ И МЫ <span class="form__blue">РЕАЛИЗИРУЕМ</span> ВАШИ ИДЕИ!
-            </h1>
-            <div class="form__bottom">
-              <p class="form__text">
-                Мы в соцсетях
-              </p>
-              <ul class="form__list">
-                <li class="form__items">
-                  <a class="form__links" href="#">
-                    <i class="fab fa-youtube"></i>
-                  </a>
-                </li>
-                <li class="form__items">
-                  <a class="form__links" href="#">
-                    <i class="fab fa-telegram"></i>
-                  </a>
-                </li>
-                <li class="form__items">
-                  <a class="form__links" href="#">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li class="form__items">
-                  <a class="form__links" href="#">
-                    <i class="fab fa-facebook-square"></i>
-                  </a>
-                </li>
-              </ul>
+        <div class="super__container">
+          <div class="super__header">
+            <div class="super__megas"><span class="super__what">What we</span>
+              <div class="super__text">Here goes some text that describes portfolio</div>
+            </div>
+            <div class="super__megac">
+              <div class="super__deco"></div>Have done
+            </div>
+            <div class="super__megae">so far <div class="super__art"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region -->
+    <section class="project">
+      <div class="container">
+        <div class="project__container">
+
+          <form class="project__form" action="./works.html" method="get">
+            <div class="project__first">
+              <select class="project__category" name="category" id="category">
+                <option value="all" selected="selected">All</option>
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+              </select>
             </div>
 
-          </div>
-          <div class="form__right">
-            <form class="form__form" action="get">
-              <div class="form__fio">
-                <input class="form__name" type="text" name="fio" id="fio" placeholder="Ф.И.О" required="required"
-                  autocomplete="off">
-              </div>
-              <div class="form__contact">
-                <input class="form__company" type="text" name="company" placeholder="Название компании" id="company"
-                  required="required" autocomplete="off">
-                <div class="form__tell">
-                  <input class="form__tel" type="tel" name="tel" id="tele" placeholder="+998__ ___ __ __"
-                    required="required" autocomplete="off">
-                  <div class="form__error">
-                    Введите действительный номер</div>
-                </div>
-              </div>
-              <div class="form__aria">
-                <textarea class="form__textarea" name="about" id="about" cols="30" rows="10" required="required"
-                  placeholder="Рассказивайте больше о проекте"></textarea>
+            <div class="project__second">
+              <span class="project__second--deco material-icons">
+                search
+                </span>
+              <input class="project__search" type="search" name="search" id="search" placeholder="| Search...">
+            </div>
 
+            <div class="project__third">
+              <select class="project__time" name="time" id="time">
+                <option value="newest" selected="selected">Newest</option>
+                <option value="ranked">Top Ranked</option>
+              </select>
+            </div>
+          </form>
+
+          <ul class="project__list">
+            <li class="project__items">
+              <div class="project__content">
+                <div class="project__head">
+                <p class="project__cat">
+                  Брендинг
+                </p>
+                <h2 class="project__title">
+                  Bridgefund
+                </h2>
               </div>
-              <div class="fomr__filearea">
-                <input class="form__file" type="file" name="file" id="file">
-                <div class="form__define">Необъезательно. Файл должен быть на формате .doc, .pdf, .pptx, .zip</div>
+              <img class="project__img--none" width="320" height="268" src="./images/project/brid.png" alt="Bridgefund">
+              <div class="project__text">
+                Viverra sociis etiam sit aliquet. Amet at tortor website dui nunc sit. Semper amet laoreet nec faucibus euismod. Urna, in nisi, elementum eget admin panel, accumsan diam erat. Dictum eu in interdum est. 
               </div>
-              <div class="form__button">
-                <input class="form__submit" type="submit" value="отправить">
+              <a class="project__button" href="#">
+                ПОСМОТРЕТЬ ПРОЕКТ
+              </a>
               </div>
-            </form>
-          </div>
-          <div class="form__center">
-            <p class="form__text">
-              Мы в соцсетях
-            </p>
-            <ul class="form__list">
-              <li class="form__items">
-                <a class="form__links" href="#">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </li>
-              <li class="form__items">
-                <a class="form__links" href="#">
-                  <i class="fab fa-telegram"></i>
-                </a>
-              </li>
-              <li class="form__items">
-                <a class="form__links" href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li class="form__items">
-                <a class="form__links" href="#">
-                  <i class="fab fa-facebook-square"></i>
-                </a>
-              </li>
-            </ul>
+              <img class="project__img" src="./images/project/brid.png" width="596" height="500" alt="Bridgefund">
+            </li>
+            <li class="project__items">
+              <div class="project__content">
+                <div class="project__head">
+                <p class="project__cat">
+                  Веб-разработка
+                </p>
+                <h2 class="project__title">
+                  Twinkle
+                </h2>
+              </div>
+              <img class="project__img--none" width="320" height="268" src="./images/project/twinkle.png" alt="Twinkle">
+              <div class="project__text">
+                Viverra sociis etiam sit aliquet. Amet at tortor website dui nunc sit. Semper amet laoreet nec faucibus euismod. Urna, in nisi, elementum eget admin panel, accumsan diam erat. Dictum eu in interdum est. 
+              </div>
+              <a class="project__button" href="#">
+                ПОСМОТРЕТЬ ПРОЕКТ
+              </a>
+              </div>
+              <img class="project__img" src="./images/project/twinkle.png" width="596" height="500" alt="Twinkle">
+            </li>
+            <li class="project__items">
+              <div class="project__content">
+                <div class="project__head">
+                <p class="project__cat">
+                  Мобильная приложуха
+                </p>
+                <h2 class="project__title">
+                  DocEdit
+                </h2>
+              </div>
+              <img class="project__img--none" width="320" height="268" src="./images/project/docedit.png" alt="DocEdit">
+              <div class="project__text">
+                Viverra sociis etiam sit aliquet. Amet at tortor website dui nunc sit. Semper amet laoreet nec faucibus euismod. Urna, in nisi, elementum eget admin panel, accumsan diam erat. Dictum eu in interdum est. 
+              </div>
+              <a class="project__button" href="#">
+                ПОСМОТРЕТЬ ПРОЕКТ
+              </a>
+              </div>
+              <img class="project__img" src="./images/project/docedit.png" width="596" height="500" alt="DocEdit">
+            </li>
+            <li class="project__items">
+              <div class="project__content">
+                <div class="project__head">
+                <p class="project__cat">
+                  Логотип
+                </p>
+                <h2 class="project__title">
+                  Weather App
+                </h2>
+              </div>
+              <img class="project__img--none" width="320" height="268" src="./images/project/weather.png" alt="weather">
+              <div class="project__text">
+                Viverra sociis etiam sit aliquet. Amet at tortor website dui nunc sit. Semper amet laoreet nec faucibus euismod. Urna, in nisi, elementum eget admin panel, accumsan diam erat. Dictum eu in interdum est. 
+              </div>
+              <a class="project__button" href="#">
+                ПОСМОТРЕТЬ ПРОЕКТ
+              </a>
+              </div>
+              <img class="project__img" src="./images/project/weather.png" width="596" height="500" alt="weather">
+            </li>
+            <li class="project__items">
+              <div class="project__content">
+                <div class="project__head">
+                <p class="project__cat">
+                  Платформа обучения
+                </p>
+                <h2 class="project__title">
+                  Ofspace
+                </h2>
+              </div>
+              <img class="project__img--none" width="320" height="268" src="./images/project/ofspace.png" alt="Ofspace">
+              <div class="project__text">
+                Viverra sociis etiam sit aliquet. Amet at tortor website dui nunc sit. Semper amet laoreet nec faucibus euismod. Urna, in nisi, elementum eget admin panel, accumsan diam erat. Dictum eu in interdum est. 
+              </div>
+              <a class="project__button" href="#">
+                ПОСМОТРЕТЬ ПРОЕКТ
+              </a>
+              </div>
+              <img class="project__img" src="./images/project/ofspace.png" width="596" height="500" alt="ofspace">
+            </li>
+            <li class="project__items">
+              <div class="project__content">
+                <div class="project__head">
+                <p class="project__cat">
+                  Платёжная система
+                </p>
+                <h2 class="project__title">
+                  Celengan
+                </h2>
+              </div>
+              <img class="project__img--none" width="320" height="268" src="./images/project/calengan.png" alt="calengan">
+              <div class="project__text">
+                Viverra sociis etiam sit aliquet. Amet at tortor website dui nunc sit. Semper amet laoreet nec faucibus euismod. Urna, in nisi, elementum eget admin panel, accumsan diam erat. Dictum eu in interdum est. 
+              </div>
+              <a class="project__button" href="#">
+                ПОСМОТРЕТЬ ПРОЕКТ
+              </a>
+              </div>
+              <img class="project__img" src="./images/project/calengan.png" width="596" height="500" alt="">
+            </li>
+            <li class="project__items">
+              <div class="project__content">
+                <div class="project__head">
+                <p class="project__cat">
+                  Лендинг-пейдж
+                </p>
+                <h2 class="project__title">
+                  CYA (charity)
+                </h2>
+              </div>
+              <img class="project__img--none" width="320" height="268" src="./images/project/cya.png" alt="CYA (charity)">
+              <div class="project__text">
+                Viverra sociis etiam sit aliquet. Amet at tortor website dui nunc sit. Semper amet laoreet nec faucibus euismod. Urna, in nisi, elementum eget admin panel, accumsan diam erat. Dictum eu in interdum est. 
+              </div>
+              <a class="project__button" href="#">
+                ПОСМОТРЕТЬ ПРОЕКТ
+              </a>
+              </div>
+              <img class="project__img" src="./images/project/cya.png" width="596" height="500" alt="CYA (charity)">
+            </li>
+            <li class="project__items">
+              <div class="project__content">
+                <div class="project__head">
+                <p class="project__cat">
+                  Интернет-магазин
+                </p>
+                <h2 class="project__title">
+                  Fashional.ly
+                </h2>
+              </div>
+              <img class="project__img--none" width="320" height="268" src="./images/project/fashionly.png" alt="Fashional.ly">
+              <div class="project__text">
+                Viverra sociis etiam sit aliquet. Amet at tortor website dui nunc sit. Semper amet laoreet nec faucibus euismod. Urna, in nisi, elementum eget admin panel, accumsan diam erat. Dictum eu in interdum est. 
+              </div>
+              <a class="project__button" href="#">
+                ПОСМОТРЕТЬ ПРОЕКТ
+              </a>
+              </div>
+              <img class="project__img" src="./images/project/fashionly.png" width="596" height="500" alt="Fashional.ly">
+            </li>
+          </ul>
+
+          <a class="project__plus" href="#">
+            <span class="material-icons">
+              add
+              </span>
+          </a>
+
+          <div class="project__block">
+            <h2 class="project__block--title">
+              Wanna order something like those?
+            </h2>
+
+            <a href="#" class="project__block--link">
+              YES
+            </a>
           </div>
         </div>
       </div>
     </section>
     <!-- #endregion -->
+
+
+
 
     <!-- #region order-->
     <section class="order">
@@ -288,7 +421,6 @@
     </section>
     <!-- #endregion -->
   </main>
-  <!-- #endregion -->
 
   <!-- #region -->
   <footer class="footer">
