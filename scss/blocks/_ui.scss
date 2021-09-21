@@ -1,0 +1,77 @@
+.ui {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.63) 42.41%, rgba(0, 0, 0, 0) 100%), url("../images/ui/uibg.png");
+  background-size: cover;
+
+  &__container {
+    padding-top: 234px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    color: #FFFFFF;
+    margin: 0;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+
+  &__link {
+    margin-top: 180px;
+    display: flex;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #30D2A3;
+    text-decoration: none;
+  }
+
+  @include max(768px) {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.63) 42.41%, rgba(0, 0, 0, 0) 100%), url("../images/ui/uibgm.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 22px;
+      opacity: .7;
+    }
+
+    &__icon {
+      margin-left: 10px;
+    }
+  }
+
+  @include max(425px) {
+    &__text {
+      font-size: 14px;
+      line-height: 22px;
+      margin: 0;
+    }
+
+    &__container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__link{
+      align-self: flex-end;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

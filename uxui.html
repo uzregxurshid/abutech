@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abutech</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <!-- #region -->
+  <header class="header">
+    <!-- #region -->
+    <div class="container">
+      <div class="header__container">
+        <div class="header__logo">
+          <a class="header__home" href="./index.html">
+            <img class="header__img" width="126" height="28" src="./images/header/logo.svg" alt="header logo">
+          </a>
+        </div>
+        <div class="header__right">
+          <div class="header__actions">
+            <a class="header__tel" href="tel:+998901234567">
+              <span class="material-icons-outlined">
+                phone_in_talk
+              </span> <span class="header__tel--text"> +99 890 123 45 67</span>
+            </a>
+            <select class="header__selector" name="lng" id="lng">
+              <option value="ru" selected="selected">RU</option>
+              <option value="en">EN</option>
+              <option value="uz">UZ</option>
+            </select>
+            <a class="header__button" href="#">оставить заявку</a>
+          </div>
+          <div class="header__menu">
+            <button class="header__burger" id="toggle" type="button" aria-label="burger-button"><span
+                class="header__burger--text">МЕНЮ</span><span class="material-icons">
+                menu
+              </span></button>
+          </div>
+          <nav class="header__nav nav">
+            <div class="nav__top">
+              <button class="nav__close" id="toggler" type="button" aria-label="close button">
+                <span class="nav__close text" aria-hidden="true">ЗАКРЫТЬ <span class="material-icons-outlined">
+                    close
+                  </span></span>
+              </button>
+            </div>
+            <div class="nav__container">
+              <div class="nav__logo">
+                <a class="nav__home" href="./index.html">
+                  <img class="nav__img" width="126" height="28" src="./images/header/logo.svg" alt="header logo">
+                </a>
+              </div>
+              <form class="nav__langu" action="get">
+                <input class="nav__lngs" type="radio" name="lng" id="en"><span class="nav__z">EN</span>
+                <input class="nav__lngs nav_lngs--active" type="radio" checked="checked" name="lng" id="ru"><span
+                  class="nav__z">RU</span>
+                <input class="nav__lngs" type="radio" name="lng" id="eng"><span class="nav__z">UZ </span>
+              </form>
+              <ul class="nav__list">
+                <li class="nav__items">
+                  <a class="nav__links" href="./index.html">
+                    Главная
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./">
+                    О нас
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./service.html">
+                    Сервисы
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./resource.html">
+                    Ресурсы
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./works.html">
+                    Проекты
+                  </a>
+                </li>
+                <li class="nav__items">
+                  <a class="nav__links" href="./contact.html">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__footer">
+              <div class="nav__container">
+                <div class="nav__tel">
+                  <h2 class="nav__title">Номер телефона</h2>
+                  <a class="nav__phone" href="tel:+994949449484">+994 94 944 94 84 </a>
+                </div>
+                <div class="nav__social">
+                  <h2 class="nav__title">
+                    Мы в соц.сетях
+                  </h2>
+                  <ul class="nav__slist">
+                    <li class="nav__sitems">
+                      <a class="nav__slink" href="#">
+                        facebook
+                      </a>
+                    </li>
+                    <li class="nav__sitems">
+                      <a class="nav__slink" href="#">
+                        instagram
+                      </a>
+                    </li>
+                    <li class="nav__sitems">
+                      <a class="nav__slink" href="#">
+                        linkedin
+                      </a>
+                    </li>
+                    <li class="nav__sitems">
+                      <a class="nav__slink" href="#">
+                        behance
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+  </header>
+  <!-- #endregion -->
+
+  <main>
+
+    <!-- #region UXUI-->
+    <section class="ui">
+      <div class="container">
+        <div class="ui__container">
+          <div class="ui__content">
+            <h2 class="ui__title">
+              UX & UI design
+            </h2>
+            <p class="ui__text">
+              Derazamning tagida bir tup o’rik oppoq bo’lib gulladi. Biznikini sovuq urib ketdi :)
+            </p>
+          </div>
+
+          <a class="ui__link" href="#">Create project<span class="ui__icon material-icons">
+              arrow_right_alt
+            </span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- #region ux-->
+    <section class="ux">
+      <div class="container">
+        <div class="ux__container">
+          <h2 class="ux__title">
+            What is UX & UI?
+          </h2>
+          <a class="ux__video" href="#">
+            <img src="./images/ui/video.png" width="1280" height="600" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region you can do it-->
+    <section class="can">
+      <div class="container">
+        <div class="can__container">
+          <div class="can__title">
+            How we can help you
+          </div>
+          <div class="can__text">
+            Betta qanaqadir shu sohani yanada ochib beruvchi gap bo’ladi-da, akalar. Copywriterlarga aytsak yozib
+            berishar endi. Lorem ipsum koroche
+          </div>
+          <ul class="can__list">
+            <li class="can__items">
+              <img class="can__img" src="./images/ui/mobile.svg" alt="Mobile design">
+              <div class="can__content">
+                <h3 class="can__head">
+                  Mobile design
+                </h3>
+                <p class="can__lorem">
+                  Здесь идёт текст обозначающий суть этого направление
+                </p>
+              </div>
+            </li>
+            <li class="can__items">
+              <img class="can__img" src="./images/ui/web.svg" alt="Web design">
+              <div class="can__content">
+                <h3 class="can__head">
+                  Web design
+                </h3>
+                <p class="can__lorem">
+                  Eget molestie tincidunt eget a aucto orci diam adipiscing sit.
+                </p>
+              </div>
+            </li>
+            <li class="can__items">
+              <img class="can__img" src="./images/ui/design.svg" alt="Design systems">
+              <div class="can__content">
+                <h3 class="can__head">
+                  Design systems
+                </h3>
+                <p class="can__lorem">
+                  Eget molestie tincidunt eget a aucto orci diam adipiscing sit. Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+            </li>
+            <li class="can__items">
+              <img class="can__img" src="./images/ui/interface.svg" alt="Interface design">
+              <div class="can__content">
+                <h3 class="can__head">
+                  Interface design
+                </h3>
+                <p class="can__lorem">
+                  Eget molestie tincidunt eget a aucto orci diam adipiscing sit. Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+            </li>
+            <li class="can__items">
+              <img class="can__img" src="./images/ui/redesign.svg" alt="Redesign">
+              <div class="can__content">
+                <h3 class="can__head">
+                  Redesign
+                </h3>
+                <p class="can__lorem">
+                  Eget molestie tincidunt eget a aucto orci diam adipiscing sit. Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+            </li>
+            <li class="can__items">
+              <img class="can__img" src="./images/ui/testing.svg" alt="Usability testing">
+              <div class="can__content">
+                <h3 class="can__head">
+                  Usability testing
+                </h3>
+                <p class="can__lorem">
+                  Eget molestie tincidunt eget a aucto orci diam adipiscing sit. Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <a class="can__button" href="#">
+            СОЗДАТЬ ПРОЕКТ
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region steps-->
+    <section class="step">
+      <div class="container">
+        <div class="step__container--t">
+          <h2 class="step__title">
+            How we work
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section class="step--t">
+      <div class="container">
+        <div class="step__container">
+
+          <div class="step__content">
+            <div class="container">
+              <ul class="step__list">
+                <li class="step__items">
+                  <img class="step__img" src="./images/steps/idea.svg" alt="idea">
+                  <div class="step__define">
+                    idea
+                  </div>
+                </li>
+                <li class="step__items">
+                  <img class="step__img" src="./images/steps/research.svg" alt="research">
+                  <div class="step__define">
+                    research
+                  </div>
+                </li>
+                <li class="step__items">
+                  <img class="step__img" src="./images/steps/desgin.svg" alt="design">
+                  <div class="step__define">
+                    design
+                  </div>
+                </li>
+                <li class="step__items">
+                  <img class="step__img" src="./images/steps/prototype.svg" alt="prototype">
+                  <div class="step__define">
+                    prototype
+                  </div>
+                </li>
+                <li class="step__items">
+                  <img class="step__img" src="./images/steps/develop.svg" alt="develop">
+                  <div class="step__define">
+                    develop
+                  </div>
+                </li>
+                <li class="step__items">
+                  <img class="step__img" src="./images/steps/review.svg" alt="review">
+                  <div class="step__define">
+                    review
+                  </div>
+                </li>
+                <li class="step__items">
+                  <img class="step__img" src="./images/steps/test.svg" alt="test">
+                  <div class="step__define">
+                    test
+                  </div>
+                </li>
+                <li class="step__items">
+                  <img class="step__img" src="./images/steps/launch.svg" alt="launch">
+                  <div class="step__define">
+                    launch
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region offer-->
+    <section class="offer">
+      <div class="container">
+        <div class="offer__container">
+          <h2 class="offer__title">
+            What we offer
+          </h2>
+          <ul class="offer__list">
+            <li class="offer__items">
+              <div class="offer__content">
+                <h3 class="offer__head">
+                  Mobile-first web design
+                </h3>
+                <div class="offer__text">
+                  Tincidunt donec velit aenean quam ut et. Nulla mattis nisl, arcu rhoncus interdum semper. Sed pharetra
+                  convallis neque dolor nunc, sapien cursus ut turpis.
+                </div>
+              </div>
+            </li>
+            <li class="offer__items">
+              <div class="offer__content">
+                <h3 class="offer__head">
+                  Responsive design for all devices and platforms
+                </h3>
+                <div class="offer__text">
+                  Vel vulputate cursus tellus nullam rhoncus natoque consequat nulla. Ut sit egestas convallis integer
+                  duis. Sed tortor vel vel in gravida. Sem aliquet at ultricies tempor sem.
+                </div>
+              </div>
+            </li>
+            <li class="offer__items">
+              <div class="offer__content">
+                <h3 class="offer__head">
+                  UX copywriting included
+                </h3>
+                <div class="offer__text">
+                  Euismod tristique varius libero suspendisse dignissim eu tellus proin urna. Cras enim, feugiat hac
+                  vitae congue mauris commodo. Enim diam sed interdum metus.
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region end-->
+    <div class="offer">
+      <div class="container">
+        <div class="offer__container">
+          <h2 class="offer__title">
+            Что мы делали на этой сфере
+          </h2>
+          <ul class="project__list">
+            <li class="project__items">
+              <div class="project__content">
+                <div class="project__head">
+                  <p class="project__cat">
+                    Брендинг
+                  </p>
+                  <h2 class="project__title">
+                    Bridgefund
+                  </h2>
+                </div>
+                <img class="project__img--none" width="320" height="268" src="./images/project/brid.png"
+                  alt="Bridgefund">
+                <div class="project__text">
+                  Viverra sociis etiam sit aliquet. Amet at tortor website dui nunc sit. Semper amet laoreet nec
+                  faucibus
+                  euismod. Urna, in nisi, elementum eget admin panel, accumsan diam erat. Dictum eu in interdum est.
+                </div>
+                <a class="project__button" href="#">
+                  ПОСМОТРЕТЬ ПРОЕКТ
+                </a>
+              </div>
+              <img class="project__img" src="./images/project/brid.png" width="596" height="500" alt="Bridgefund">
+            </li>
+
+
+            <li class="project__items">
+              <div class="project__content">
+                <div class="project__head">
+                  <p class="project__cat">
+                    Логотип
+                  </p>
+                  <h2 class="project__title">
+                    Weather App
+                  </h2>
+                </div>
+                <img class="project__img--none" width="320" height="268" src="./images/project/weather.png"
+                  alt="weather">
+                <div class="project__text">
+                  Viverra sociis etiam sit aliquet. Amet at tortor website dui nunc sit. Semper amet laoreet nec
+                  faucibus
+                  euismod. Urna, in nisi, elementum eget admin panel, accumsan diam erat. Dictum eu in interdum est.
+                </div>
+                <a class="project__button" href="#">
+                  ПОСМОТРЕТЬ ПРОЕКТ
+                </a>
+              </div>
+              <img class="project__img" src="./images/project/weather.png" width="596" height="500" alt="weather">
+            </li>
+            <li class="project__items">
+              <div class="project__content">
+                <div class="project__head">
+                  <p class="project__cat">
+                    Платформа обучения
+                  </p>
+                  <h2 class="project__title">
+                    Ofspace
+                  </h2>
+                </div>
+                <img class="project__img--none" width="320" height="268" src="./images/project/ofspace.png"
+                  alt="Ofspace">
+                <div class="project__text">
+                  Viverra sociis etiam sit aliquet. Amet at tortor website dui nunc sit. Semper amet laoreet nec
+                  faucibus
+                  euismod. Urna, in nisi, elementum eget admin panel, accumsan diam erat. Dictum eu in interdum est.
+                </div>
+                <a class="project__button" href="#">
+                  ПОСМОТРЕТЬ ПРОЕКТ
+                </a>
+              </div>
+              <img class="project__img" src="./images/project/ofspace.png" width="596" height="500" alt="ofspace">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+ <!-- #region faq-->
+ <section class="faq">
+  <div class="container">
+    <div class="faq__container">
+      <h2 class="faq__head">
+        Questions you might have
+      </h2>
+      <p class="faq__text">
+        Take a look at how we solve challenges to meet project requirements.
+      </p>
+
+      <ul class="faq__list">
+        <li class="faq__items">
+          <h4 class="faq__title">
+            Sagittis dictumst vitae et purus ullamcorper sit lacus, ut. Ipsum vitae faucibus ipsum?
+            <span class="material-icons">
+              expand_more
+            </span>
+          </h4>
+          <p class="faq__answer">
+            Nascetur a eu id eget. Mi lorem enim quam tortor. Odio iaculis facilisis turpis vitae mauris nisi. Vitae
+            quisque tristique sapien elementum facilisis faucibus. Sit ipsum massa erat id fringilla. Iaculis in eu
+            magna gravida pellentesque sed id. Sed felis, aliquet id ac tortor fames hendrerit varius. Tincidunt
+            scelerisque sit senectus semper. Id a tortor erat enim. Amet.
+          </p>
+        </li>
+        <li class="faq__items">
+          <h4 class="faq__title">
+            O’zi shu narsa kerak bo’larmikan-a? Kimdir o’qiydimi shuni?
+            <span class="material-icons">
+              expand_more
+            </span>
+          </h4>
+          <p class="faq__answer">
+            Nascetur a eu id eget. Mi lorem enim quam tortor. Odio iaculis facilisis turpis vitae mauris nisi. Vitae
+            quisque tristique sapien elementum facilisis faucibus. Sit ipsum massa erat id fringilla. Iaculis in eu
+            magna gravida pellentesque sed id. Sed felis, aliquet id ac tortor fames hendrerit varius. Tincidunt
+            scelerisque sit senectus semper. Id a tortor erat enim. Amet.
+          </p>
+        </li>
+        <li class="faq__items">
+          <h4 class="faq__title">
+            Akkordionni bosganda mashnaqa qilib chiqoratta birodarlar
+            <span class="material-icons">
+              expand_less
+            </span>
+          </h4>
+          <p class="faq__answer">
+            Nascetur a eu id eget. Mi lorem enim quam tortor. Odio iaculis facilisis turpis vitae mauris nisi. Vitae
+            quisque tristique sapien elementum facilisis faucibus. Sit ipsum massa erat id fringilla. Iaculis in eu
+            magna gravida pellentesque sed id. Sed felis, aliquet id ac tortor fames hendrerit varius. Tincidunt
+            scelerisque sit senectus semper. Id a tortor erat enim. Amet.
+          </p>
+        </li>
+        <li class="faq__items">
+          <h4 class="faq__title">
+            Ha mayli, nima bo’lsa bo’lar. Yasab qo’yorelikchi. Jaa bo’masa boshqa joyda ishlatamiz
+            <span class="material-icons">
+              expand_more
+            </span>
+          </h4>
+          <p class="faq__answer">
+            Nascetur a eu id eget. Mi lorem enim quam tortor. Odio iaculis facilisis turpis vitae mauris nisi. Vitae
+            quisque tristique sapien elementum facilisis faucibus. Sit ipsum massa erat id fringilla. Iaculis in eu
+            magna gravida pellentesque sed id. Sed felis, aliquet id ac tortor fames hendrerit varius. Tincidunt
+            scelerisque sit senectus semper. Id a tortor erat enim. Amet.
+          </p>
+        </li>
+        <li class="faq__items">
+          <h4 class="faq__title">
+            Keyin rangiyam o’zgaradi abutechni 3-rangiga
+            <span class="material-icons">
+              expand_more
+            </span>
+          </h4>
+          <p class="faq__answer">
+            Nascetur a eu id eget. Mi lorem enim quam tortor. Odio iaculis facilisis turpis vitae mauris nisi. Vitae
+            quisque tristique sapien elementum facilisis faucibus. Sit ipsum massa erat id fringilla. Iaculis in eu
+            magna gravida pellentesque sed id. Sed felis, aliquet id ac tortor fames hendrerit varius. Tincidunt
+            scelerisque sit senectus semper. Id a tortor erat enim. Amet.
+          </p>
+        </li>
+        <li class="faq__items">
+          <h4 class="faq__title">
+            Sagittis dictumst vitae et purus ullamcorper sit lacus, ut. Ipsum vitae faucibus ipsum?
+            <span class="material-icons">
+              expand_more
+            </span>
+          </h4>
+          <p class="faq__answer">
+            Nascetur a eu id eget. Mi lorem enim quam tortor. Odio iaculis facilisis turpis vitae mauris nisi. Vitae
+            quisque tristique sapien elementum facilisis faucibus. Sit ipsum massa erat id fringilla. Iaculis in eu
+            magna gravida pellentesque sed id. Sed felis, aliquet id ac tortor fames hendrerit varius. Tincidunt
+            scelerisque sit senectus semper. Id a tortor erat enim. Amet.
+          </p>
+        </li>
+      </ul>
+
+
+      <div class="faq__button">
+        <h3 class="faq__button--title">
+          Ofitsant, 2 ta shashlik, 2 ta jaz
+        </h3>
+        <a class="faq__button--link" href="#">
+         <span class="faq__button--hide">
+          SHASHLIK QOMAGANDI-DA
+         </span>
+         <span class="faq__button--ok">
+           Bo'ldi
+         </span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- #endregion -->
+
+
+    <!-- #region order-->
+    <section class="order">
+      <div class="order__container">
+        <div class="order__left">
+          <div class="order__content">
+            <h3 class="order__title">
+              Хотите заказать услуги?
+            </h3>
+            <p class="order__text">
+              Reference site about, giving information on its origins, as well as a random Lipsum generator.
+            </p>
+            <form action="get">
+              <input class="order__tel" type="tel" name="tel" id="tel" placeholder="+998 |" autocomplete="off"
+                required="required">
+              <input class="order__button" type="submit" value="отправить">
+            </form>
+          </div>
+        </div>
+        <div class="order__right">
+          <div class="order__content">
+            <h3 class="order__title">
+              Ознакомтесь с начальными
+              инструкциями
+            </h3>
+            <p class="order__text">
+              Reference site about, giving information on its origins
+            </p>
+            <a class="order__download" href="#">
+              <span class="material-icons">
+                save_alt
+              </span>
+              Скачать бриф
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion -->
+  </main>
+
+  <!-- #region -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__header">
+          <h2 class="footer__title">
+            Хотите сделать что-то великое? Позвольте вам помочь.
+          </h2>
+          <p class="footer__text">
+            Готовы? Свяжитесь сегодня.
+          </p>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__email">
+            <p class="footer__email--name">
+              E-mail
+            </p>
+            <p class="footer__email--address">
+              info@abutech.com
+            </p>
+          </div>
+          <div class="footer__tel">
+            <p class="footer__tel--name">
+              Номер телефона
+            </p>
+            <p class="footer__tel--address">
+              +994 94 944 94 84
+            </p>
+          </div>
+        </div>
+        <div class="footer__loc">
+          <div class="footer__location">
+            <p class="footer__location--name">
+              Наш офис
+            </p>
+            <div class="footer__location--address">
+              Sebzor street, Xadra square, Tashkent, Uzbekistan
+            </div>
+          </div>
+          <div class="footer__social">
+            <div class="footer__social--name">
+              Мы в соц.сетях
+            </div>
+            <ul class="footer__social--list">
+              <li class="footer__items">
+                <a class="footer__social--links" href="#">
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__items">
+                <a class="footer__social--links" href="#">
+                  Instagram
+                </a>
+              </li>
+              <li class="footer__items">
+                <a class="footer__social--links" href="#">
+                  Telegram
+                </a>
+              </li>
+              <li class="footer__items">
+                <a class="footer__social--links" href="#">
+                  Behance
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__button">
+            <a class="footer__button--primary" href="#">
+              Ознакомиться с услугами
+              <span class="material-icons">
+                arrow_right_alt
+              </span>
+            </a>
+            <a class="footer__button--secondary" href="#">
+              Посмотреть работы
+              <span class="material-icons">
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- #endregion -->
+</body>
+
+</html>

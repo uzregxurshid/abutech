@@ -1,0 +1,164 @@
+.offer {
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 73px;
+    color: #000000;
+  }
+
+  &__list {
+    display: flex;
+    @include list-unstyled;
+    justify-content: center;
+
+  }
+
+  &__items {
+    width: 407px;
+    height: 369px;
+    padding: 40px;
+    background: #F1FCF9;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__items~&__items {
+    margin-left: 30px;
+  }
+
+  &__head {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+    margin: 0;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 15px;
+  }
+
+  &__items {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      font-size: 150px;
+      font-weight: bold;
+      color: #00094A;
+      opacity: 0.07;
+      z-index: 0;
+      top: 0;
+      left: 0;
+    }
+
+    &:nth-child(1) {
+      &:before {
+        content: "01";
+      }
+    }
+
+    &:nth-child(2) {
+      &:before {
+        content: "02";
+      }
+    }
+
+    &:nth-child(3) {
+      &:before {
+        content: "03";
+      }
+    }
+  }
+
+  @include max(1260px) {
+    &__title {
+      font-size: 45px;
+      line-height: 50px;
+    }
+  }
+
+  @include max(1160px) {
+    &__list {
+      flex-wrap: wrap;
+    }
+
+    &__items {
+      margin-top: 40px;
+    }
+  }
+
+  @include max(1000px) {
+    &__title {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+
+  @include max(900px) {
+    &__list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      margin: 0;
+      margin-top: 70px;
+    }
+
+    &__items {
+      margin-left: 0 !important;
+    }
+  }
+
+  @include max(475px) {
+    &__items {
+      width: 320px;
+      height: 346px;
+
+      &::before {
+        top: -30px;
+      }
+    }
+
+    &__head {
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  @include max(425px) {
+    &__title {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+
+  @include max(380px) {
+    &__list {
+      align-items: center;
+    }
+  }
+
+  @include max(359px) {
+    &__list {
+      align-items: center;
+    }
+
+    &__items {
+      width: 280px;
+    }
+  }
+}

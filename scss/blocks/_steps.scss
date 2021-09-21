@@ -1,0 +1,99 @@
+.step {
+  &--t {
+    background: #00094A;
+    margin-top: 30px;
+  }
+
+  &__container--t {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  &__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 63px;
+    margin: 0;
+    color: #000000;
+  }
+
+
+  &__list {
+    @include list-unstyled;
+    display: flex;
+    align-items: center;
+    padding: 65px 0;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  &__items~&__items {
+    margin-left: 100px;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__define {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+
+  @include max(1280px){
+    &__items ~ &__items{
+      margin-left: 70px;
+    }
+    &__list{
+      margin-top: 0;
+    }
+  }
+  @include max(1260px){
+    &__title{
+      font-size: 45px;
+      line-height:50px;
+    }
+  }
+  @include max(1000px){
+    &__title{
+      font-size: 35px;
+      line-height: 40px;
+    }
+    &__list{
+      margin-left: -20%;
+      margin-right: -20%;
+    }
+  }
+
+  @include max(425px){
+    &__title{
+      font-size: 25px;
+      line-height: 30px;
+    }
+    &__items ~ &__items{
+      margin-left: 50px;
+    }
+    &__list{
+      margin-left: -5%;
+      margin-right: -38%;
+    }
+  }
+
+  @include max(359px){
+    &__list{
+      margin-left: -28%;
+      margin-right: -20%;
+    }
+  }
+}

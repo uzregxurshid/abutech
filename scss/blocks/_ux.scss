@@ -1,0 +1,61 @@
+.ux {
+  &__container {
+    padding-top: 100px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 63px;
+    color: #000000;
+  }
+
+  &__video{
+    &:hover{
+      filter: brightness(0.9);
+      transition:.4s;
+    }
+    &:active{
+      opacity:.7;
+    }
+  }
+
+  @include max(1023px) {
+    &__container {
+      padding-top: 80px;
+    }
+
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+
+  @include max(900px) {
+    &__container {
+      padding-top: 41px;
+    }
+
+    &__title {
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
+
+  @include max(768px) {
+    &__container {
+      padding-top: 50px;
+    }
+
+    &__title {
+      font-size: 25px;
+      line-height: 35px;
+      margin: 0;
+    }
+
+    &__video{
+      margin-top: 20px;
+    }
+  }
+}

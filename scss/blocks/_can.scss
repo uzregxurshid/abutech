@@ -1,0 +1,190 @@
+.can {
+
+  &__container {
+    padding-top: 100px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 63px;
+    color: #000000;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    opacity: 0.6;
+    width: 850px;
+    margin-top: 10px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include list-unstyled;
+  }
+
+  &__items {
+    list-style-image: url("../images/ui/list.svg");
+    display: flex;
+    width: 407px;
+    border-left: 3px solid #306FD2;
+    padding-left: 27px;
+    margin-top: 60px;
+    padding-right: 2px;
+  }
+
+  &__content {
+    margin-left: 25px;
+  }
+
+  &__button {
+    width: 186px;
+    height: 42px;
+    border-radius: 3px;
+    background: #00094A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+
+    &:hover {
+      opacity: .8;
+      transition: .4s;
+    }
+
+    &:active {
+      opacity: .6;
+    }
+  }
+
+  @include max(1279px) {
+    &__list {
+      justify-content: center;
+    }
+
+    &__items {
+      margin-right: 30px;
+    }
+  }
+
+  @include max(1000px) {
+    &__title {
+      font-size: 40px;
+      line-height: 46px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 20px;
+      width: 700px;
+    }
+  }
+
+  @include max(768px) {
+    &__title {
+      font-size: 35px;
+      line-height: 30px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 24px;
+      width: 500px;
+    }
+
+    &__head {
+      font-size: 18px;
+      line-height: 22px;
+      margin: 0;
+    }
+
+    &__lorem {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  @include max(520px) {
+    &__title {
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 22px;
+      margin: 0;
+      width: 380px;
+      margin-top: 10px;
+    }
+
+    &__head {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__lorem {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  @include max(425px) {
+    &__button {
+      margin-top: 50px;
+    }
+
+    &__container {
+      padding-top: 60px;
+    }
+
+    &__items {
+      padding-left: 20px;
+      align-items: center;
+      margin-right: 0;
+      margin-top: 30px;
+    }
+
+    &__text {
+      width: 320px;
+      margin-right: 0;
+    }
+
+    &__img {
+      width: 60px;
+      height: 60px;
+    }
+
+    &__content {
+      margin-left: 20px;
+    }
+  }
+
+  @include max(359px) {
+
+    &__text {
+      width: 280px;
+    }
+
+    &__title {
+      font-size: 23px;
+    }
+  }
+}
